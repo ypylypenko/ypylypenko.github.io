@@ -24,6 +24,18 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+sass:
+  sass_dir: css
+
+pagination:
+  enabled: true
+  per_page: 5
+  offset: 0
+  permalink: '/page/:num/'
+  title: ':title - page :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 # Build settings
 markdown: kramdown
 theme: minima
