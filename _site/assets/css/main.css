@@ -6510,6 +6510,9 @@ h6, .h6 {
   font-weight: normal;
   color: #333; }
 
+h3 {
+  font-size: 1.5rem; }
+
 /*
  * Override Bootstrap's default container.
  */
@@ -6607,7 +6610,7 @@ h6, .h6 {
 
 .blog-post-title {
   margin-bottom: .25rem;
-  font-size: 2.5rem; }
+  font-size: 1.8rem; }
 
 .blog-post-meta {
   margin-bottom: 1.25rem;

@@ -2,7 +2,7 @@
 layout: default
 title:  "Go дайджест #1: Go 1.10rc2, dep dependency management, SOLID в Go"
 date:   2018-02-17 14:10:12 +0200
-categories: [go, digest]
+categories: [go digest]
 ---
 
 _В выпуске: гайд по написанию Dockerfiles для Go, туториал по организации пакетов, introduction to testing in Go, high performance Go._
