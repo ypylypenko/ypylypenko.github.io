@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-02T11:59:06+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Go дайджест #6:</title><link href="http://localhost:4000/go/digest/2018/10/31/go-digest-6.html" rel="alternate" type="text/html" title="Go дайджест #6: " /><published>2018-10-31T14:10:12+02:00</published><updated>2018-10-31T14:10:12+02:00</updated><id>http://localhost:4000/go/digest/2018/10/31/go-digest-6</id><content type="html" xml:base="http://localhost:4000/go/digest/2018/10/31/go-digest-6.html">&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-02T14:29:20+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Go дайджест #6:</title><link href="http://localhost:4000/go/digest/2018/10/31/go-digest-6.html" rel="alternate" type="text/html" title="Go дайджест #6: " /><published>2018-10-31T14:10:12+02:00</published><updated>2018-10-31T14:10:12+02:00</updated><id>http://localhost:4000/go/digest/2018/10/31/go-digest-6</id><content type="html" xml:base="http://localhost:4000/go/digest/2018/10/31/go-digest-6.html">&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -519,81 +519,81 @@ Using gRPC and Protocol Buffers from backend to browser.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/mitchellh/go-server-timing&quot;&gt;go-server-timing:&lt;/a&gt; библиотека для использования &lt;a href=&quot;https://www.w3.org/TR/server-timing/&quot;&gt;HTTP Server-Timing&lt;/a&gt; в Go.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/aptible/supercronic&quot;&gt;Supercronic:&lt;/a&gt; cron для контейнеров, совместимый с crontab.&lt;/p&gt;</content><author><name></name></author><summary type="html">В выпуске: гайд по написанию Dockerfiles для Go, туториал по организации пакетов, introduction to testing in Go, high performance Go.</summary></entry><entry><title type="html">Go дайджест #0: Go 1.10 Beta 2, Testing patterns, Concurrency patterns</title><link href="http://localhost:4000/go/digest/2018/01/13/go-digest-0.html" rel="alternate" type="text/html" title="Go дайджест #0: Go 1.10 Beta 2, Testing patterns, Concurrency patterns" /><published>2018-01-13T14:10:12+02:00</published><updated>2018-01-13T14:10:12+02:00</updated><id>http://localhost:4000/go/digest/2018/01/13/go-digest-0</id><content type="html" xml:base="http://localhost:4000/go/digest/2018/01/13/go-digest-0.html">&lt;h2 id=&quot;новости&quot;&gt;Новости&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qXDhLR&quot;&gt;What’s New and Different in Go 1.10&lt;/a&gt; — обзор нововведений, которые нас ждут в Go 1.10. Уже сейчас можно ознакомиться с новыми возможностями, скачав последний релиз &lt;a href=&quot;http://bit.ly/2qVG7AZ&quot;&gt;1.10 Beta 2&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qXDhLR&quot; target=&quot;_blank&quot;&gt;What’s New and Different in Go 1.10&lt;/a&gt; — обзор нововведений, которые нас ждут в Go 1.10. Уже сейчас можно ознакомиться с новыми возможностями, скачав последний релиз &lt;a href=&quot;http://bit.ly/2qVG7AZ&quot;&gt;1.10 Beta 2&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;почитать&quot;&gt;Почитать&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mxoin1&quot;&gt;Don’t just check errors, handle them gracefully&lt;/a&gt; — обработка ошибок в Go.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mxoin1&quot; target=&quot;_blank&quot;&gt;Don’t just check errors, handle them gracefully&lt;/a&gt; — обработка ошибок в Go.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qY3tpC&quot;&gt;How To Embed Versioning Information In Go Applications&lt;/a&gt; — подход к версионированию в Go бинарниках.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qY3tpC&quot; target=&quot;_blank&quot;&gt;How To Embed Versioning Information In Go Applications&lt;/a&gt; — подход к версионированию в Go бинарниках.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mwPjat&quot;&gt;Understand Go Pointers in Fewer Than 800 Words&lt;/a&gt; — Dave Cheney объясняет, что такое указатели.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mwPjat&quot; target=&quot;_blank&quot;&gt;Understand Go Pointers in Fewer Than 800 Words&lt;/a&gt; — Dave Cheney объясняет, что такое указатели.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qWtupr&quot;&gt;The Go Type System&lt;/a&gt; — подробно о системе типов в Go для новичков.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qWtupr&quot; target=&quot;_blank&quot;&gt;The Go Type System&lt;/a&gt; — подробно о системе типов в Go для новичков.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qWmM2G&quot;&gt;The Ultimate Guide to Writing a Go Tool&lt;/a&gt; — подробное руководство по написанию утилиты для Go.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qWmM2G&quot; target=&quot;_blank&quot;&gt;The Ultimate Guide to Writing a Go Tool&lt;/a&gt; — подробное руководство по написанию утилиты для Go.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qVeUhY&quot;&gt;Микросервисы, gRPC и Kubernetes&lt;/a&gt; — введение в разработки микросервисов на Go c использованием gRPC и развертыванием в кластере Kubernetes.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qVeUhY&quot; target=&quot;_blank&quot;&gt;Микросервисы, gRPC и Kubernetes&lt;/a&gt; — введение в разработки микросервисов на Go c использованием gRPC и развертыванием в кластере Kubernetes.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mvKwWz&quot;&gt;Пошаговое руководство по написанию сервиса для Kubernetes&lt;/a&gt; &lt;a href=&quot;http://bit.ly/2qO7xZr&quot;&gt;Туториал&lt;/a&gt; по разработке Facebook бота используя Go и Messenger API.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mvKwWz&quot; target=&quot;_blank&quot;&gt;Пошаговое руководство по написанию сервиса для Kubernetes&lt;/a&gt; &lt;a href=&quot;http://bit.ly/2qO7xZr&quot; target=&quot;_blank&quot;&gt;Туториал&lt;/a&gt; по разработке Facebook бота используя Go и Messenger API.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qV0CxK&quot;&gt;Implementing 6 Sorting Algorithms&lt;/a&gt; — 6 алгоритмов сортировки, имплементированных на Go.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qV0CxK&quot; target=&quot;_blank&quot;&gt;Implementing 6 Sorting Algorithms&lt;/a&gt; — 6 алгоритмов сортировки, имплементированных на Go.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qRDjou&quot;&gt;A Guide to Effective Logging in Go&lt;/a&gt; — основы логирования в Go, стандартизация логов, минимизация влияния на производительность.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qRDjou&quot; target=&quot;_blank&quot;&gt;A Guide to Effective Logging in Go&lt;/a&gt; — основы логирования в Go, стандартизация логов, минимизация влияния на производительность.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mrQRm7&quot;&gt;A Million WebSockets and Go&lt;/a&gt; — разработка высоконагруженного WebSocket-сервера в &lt;a href=&quot;http://mail.ru&quot;&gt;mail.ru&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mrQRm7&quot; target=&quot;_blank&quot;&gt;A Million WebSockets and Go&lt;/a&gt; — разработка высоконагруженного WebSocket-сервера в &lt;a href=&quot;http://mail.ru&quot; target=&quot;_blank&quot;&gt;mail.ru&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qVDBKR&quot;&gt;Building a RESTful API with Go&lt;/a&gt; — туториал по разработке RESTful API на примере приложения «Телефонная книга».&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qVDBKR&quot; target=&quot;_blank&quot;&gt;Building a RESTful API with Go&lt;/a&gt; — туториал по разработке RESTful API на примере приложения «Телефонная книга».&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qVH9Nt&quot;&gt;Http Rate Limit&lt;/a&gt; — туториал по тому, как сделать rate limit запросов в вашем API.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qVH9Nt&quot; target=&quot;_blank&quot;&gt;Http Rate Limit&lt;/a&gt; — туториал по тому, как сделать rate limit запросов в вашем API.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qVQepx&quot;&gt;Reading files in Go&lt;/a&gt; — неплохая статья с описанием нескольких способов чтения файлов.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qVQepx&quot; target=&quot;_blank&quot;&gt;Reading files in Go&lt;/a&gt; — неплохая статья с описанием нескольких способов чтения файлов.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qXmecP&quot;&gt;Calling Go functions from other languages&lt;/a&gt; — вызов функций Go из других языков c примерами для С, Python, Ruby, Node и Java.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qXmecP&quot; target=&quot;_blank&quot;&gt;Calling Go functions from other languages&lt;/a&gt; — вызов функций Go из других языков c примерами для С, Python, Ruby, Node и Java.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qUa30h&quot;&gt;Basic testing patterns in Go&lt;/a&gt; — основные шаблоны тестирования в Go.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qUa30h&quot; target=&quot;_blank&quot;&gt;Basic testing patterns in Go&lt;/a&gt; — основные шаблоны тестирования в Go.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qVBfeZ&quot;&gt;5 Advanced Testing Techniques in Go&lt;/a&gt; — статья для тех, кто хочет повысить уровень тестирования своих приложений.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qVBfeZ&quot; target=&quot;_blank&quot;&gt;5 Advanced Testing Techniques in Go&lt;/a&gt; — статья для тех, кто хочет повысить уровень тестирования своих приложений.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2muFY2O&quot;&gt;Automating Go Development with ‘make’&lt;/a&gt; - отличная статья с примерами автоматизации разработки при помощи ‘make’.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2muFY2O&quot; target=&quot;_blank&quot;&gt;Automating Go Development with ‘make’&lt;/a&gt; - отличная статья с примерами автоматизации разработки при помощи ‘make’.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mvvjol&quot;&gt;Don’t afraid of makefiles&lt;/a&gt; — еще один пример того, как можно улучшить процесс разработки используя ‘make’.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mvvjol&quot; target=&quot;_blank&quot;&gt;Don’t afraid of makefiles&lt;/a&gt; — еще один пример того, как можно улучшить процесс разработки используя ‘make’.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mtAoOb&quot;&gt;Go Concurrency Patterns: Pipelines and cancellation&lt;/a&gt; — реализация одного из concurrency паттернов.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mtAoOb&quot; target=&quot;_blank&quot;&gt;Go Concurrency Patterns: Pipelines and cancellation&lt;/a&gt; — реализация одного из concurrency паттернов.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qUwOBf&quot;&gt;Pipeline Patterns in Go&lt;/a&gt; — три примера использования pipeline паттерна.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qUwOBf&quot; target=&quot;_blank&quot;&gt;Pipeline Patterns in Go&lt;/a&gt; — три примера использования pipeline паттерна.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mwt8B0&quot;&gt;Write a Mini Load Balancer to Learn Concurrency in Go&lt;/a&gt; — автор предлагает разобраться с concurrency, написав простой load balancer.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mwt8B0&quot; target=&quot;_blank&quot;&gt;Write a Mini Load Balancer to Learn Concurrency in Go&lt;/a&gt; — автор предлагает разобраться с concurrency, написав простой load balancer.&lt;/p&gt;
 
-&lt;h2 id=&quot;посмотреть&quot;&gt;Посмотреть&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2CQvhhb&quot;&gt;Capital Go 2017: Buffalo — Rapid Web Development in Go&lt;/a&gt; — знакомство с Web фреймворком Buffalo.&lt;/p&gt;
+&lt;h2 id=&quot;посмотреть&quot;&gt;&lt;i class=&quot;fa fa-video-camera&quot;&gt;&lt;/i&gt; Посмотреть &lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2CQvhhb&quot; target=&quot;_blank&quot;&gt;Capital Go 2017: Buffalo — Rapid Web Development in Go&lt;/a&gt; — знакомство с Web фреймворком Buffalo.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2CONxr1&quot;&gt;dotGo 2017: Debuggers from scratch&lt;/a&gt; — Liz Rice объясняет, как работает отладчик.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2CONxr1&quot; target=&quot;_blank&quot;&gt;dotGo 2017: Debuggers from scratch&lt;/a&gt; — Liz Rice объясняет, как работает отладчик.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2moajA4&quot;&gt;dotGo 2017: Machine Learning and Go&lt;/a&gt; — краткое введение в машинное обучение с использованием Go.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2moajA4&quot; target=&quot;_blank&quot;&gt;dotGo 2017: Machine Learning and Go&lt;/a&gt; — краткое введение в машинное обучение с использованием Go.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qSzxLs&quot;&gt;just forfunc #26: why are there nil channels in Go?&lt;/a&gt; — автор пробует разобраться, зачем нужны nil каналы.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qSzxLs&quot; target=&quot;_blank&quot;&gt;just forfunc #26: why are there nil channels in Go?&lt;/a&gt; — автор пробует разобраться, зачем нужны nil каналы.&lt;/p&gt;
 
-&lt;h2 id=&quot;инструменты-ибиблиотеки&quot;&gt;Инструменты и библиотеки&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mwb3Db&quot;&gt;Awesome Go: 1200+ Go Links, Library and Tools&lt;/a&gt; — потрясающий список различных библиотек и инструментов.&lt;/p&gt;
+&lt;h2 id=&quot;инструменты-ибиблиотеки&quot;&gt;Инструменты и библиотеки&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mwb3Db&quot; target=&quot;_blank&quot;&gt;Awesome Go: 1200+ Go Links, Library and Tools&lt;/a&gt; — потрясающий список различных библиотек и инструментов.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2moFc7m&quot;&gt;go-web-framework-stars:&lt;/a&gt; список фреймворков для Go с наибольшим количеством звезд на GitHub.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2moFc7m&quot; target=&quot;_blank&quot;&gt;go-web-framework-stars:&lt;/a&gt; список фреймворков для Go с наибольшим количеством звезд на GitHub.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mq42ni&quot;&gt;Go Play Space:&lt;/a&gt; — экспериментальная альтернатива Go Playground с подсветкой, темами и keyboard shortcuts.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mq42ni&quot; target=&quot;_blank&quot;&gt;Go Play Space:&lt;/a&gt; — экспериментальная альтернатива Go Playground с подсветкой, темами и keyboard shortcuts.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qWiJmK&quot;&gt;HttpLive:&lt;/a&gt; — сервис, позволяющий mock’ать HTTP запросы.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qWiJmK&quot; target=&quot;_blank&quot;&gt;HttpLive:&lt;/a&gt; — сервис, позволяющий mock’ать HTTP запросы.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2CKNNY7&quot;&gt;Hermes:&lt;/a&gt; — генератор responsive email сообщений. Портирован с библиотеки Node &lt;a href=&quot;http://bit.ly/2CMu6PI&quot;&gt;mailgen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2CKNNY7&quot; target=&quot;_blank&quot;&gt;Hermes:&lt;/a&gt; — генератор responsive email сообщений. Портирован с библиотеки Node &lt;a href=&quot;http://bit.ly/2CMu6PI&quot;&gt;mailgen&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2CQFZEp&quot;&gt;Telebot 2:&lt;/a&gt; — фреймворк для разработки telegram ботов.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2CQFZEp&quot; target=&quot;_blank&quot;&gt;Telebot 2:&lt;/a&gt; — фреймворк для разработки telegram ботов.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mpUpF6&quot;&gt;Config: configuration library for Go&lt;/a&gt; — работает с переменными окружения, JSON файлами и умеет автоматически перезагружаться при
- SIGHUP. &lt;a href=&quot;http://bit.ly/2momqNy&quot;&gt;go-base:&lt;/a&gt; Boilerplate для построения RESTful API.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mpUpF6&quot; target=&quot;_blank&quot;&gt;Config: configuration library for Go&lt;/a&gt; — работает с переменными окружения, JSON файлами и умеет автоматически перезагружаться при
+SIGHUP. &lt;a href=&quot;http://bit.ly/2momqNy&quot; target=&quot;_blank&quot;&gt;go-base:&lt;/a&gt; Boilerplate для построения RESTful API.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2moDAdO&quot;&gt;Colly:&lt;/a&gt; — фреймворк для парсинга.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2moDAdO&quot; target=&quot;_blank&quot;&gt;Colly:&lt;/a&gt; — фреймворк для парсинга.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qWmk4u&quot;&gt;kurly:&lt;/a&gt; альтернатива curl написанная на Go &lt;a href=&quot;http://bit.ly/2mqmNal&quot;&gt;Pixel:&lt;/a&gt; библиотека для разработки 2D игр.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qWmk4u&quot; target=&quot;_blank&quot;&gt;kurly:&lt;/a&gt; альтернатива curl написанная на Go &lt;a href=&quot;http://bit.ly/2mqmNal&quot; target=&quot;_blank&quot;&gt;Pixel:&lt;/a&gt; библиотека для разработки 2D игр.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.facebook.com/heartwilltell&quot;&gt;Sergey Hobot&lt;/a&gt; создал канал с новостями из мира Go в telegram, &lt;a href=&quot;http://bit.ly/2moD2EJ&quot;&gt;подписывайтесь&lt;/a&gt; :)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.facebook.com/heartwilltell&quot; target=&quot;_blank&quot;&gt;Sergey Hobot&lt;/a&gt; создал канал с новостями из мира Go в telegram, &lt;a href=&quot;http://bit.ly/2moD2EJ&quot; target=&quot;_blank&quot;&gt;подписывайтесь&lt;/a&gt; :)&lt;/p&gt;
 
-&lt;!-- Следующий выпуск: [Go дайджест #1](http://dou.ua/lenta/digests/go-digest-1/) → --&gt;</content><author><name></name></author><summary type="html">Новости What’s New and Different in Go 1.10 — обзор нововведений, которые нас ждут в Go 1.10. Уже сейчас можно ознакомиться с новыми возможностями, скачав последний релиз 1.10 Beta 2.</summary></entry></feed>
+&lt;!-- Следующий выпуск: [Go дайджест #1](http://dou.ua/lenta/digests/go-digest-1/){:target=&quot;_blank&quot;} → --&gt;</content><author><name></name></author><summary type="html">Новости What’s New and Different in Go 1.10 — обзор нововведений, которые нас ждут в Go 1.10. Уже сейчас можно ознакомиться с новыми возможностями, скачав последний релиз 1.10 Beta 2.</summary></entry></feed>
