@@ -1,37 +1,599 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-31T19:59:00+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Go дайджест #5: Go 1.11 c поддержкой модулей и WebAssembly, отказоустойчивость в микросервисной архитектуре</title><link href="http://localhost:4000/go/digest/2018/09/08/go-digest-5.html" rel="alternate" type="text/html" title="Go дайджест #5: Go 1.11 c поддержкой модулей и WebAssembly, отказоустойчивость в микросервисной архитектуре" /><published>2018-09-08T15:10:12+03:00</published><updated>2018-09-08T15:10:12+03:00</updated><id>http://localhost:4000/go/digest/2018/09/08/go-digest-5</id><content type="html" xml:base="http://localhost:4000/go/digest/2018/09/08/go-digest-5.html">&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-02T11:59:06+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Go дайджест #6:</title><link href="http://localhost:4000/go/digest/2018/10/31/go-digest-6.html" rel="alternate" type="text/html" title="Go дайджест #6: " /><published>2018-10-31T14:10:12+02:00</published><updated>2018-10-31T14:10:12+02:00</updated><id>http://localhost:4000/go/digest/2018/10/31/go-digest-6</id><content type="html" xml:base="http://localhost:4000/go/digest/2018/10/31/go-digest-6.html">&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">def print_hi(name) puts &quot;Hi, #{name}&quot; end print_hi('Tom') #=&amp;gt; prints 'Hi, Tom' to STDOUT.</summary></entry><entry><title type="html">Go дайджест #4: Go 1.11 Beta 1, WebAssembly and Go, GraphQL, Apple Metal API and Go</title><link href="http://localhost:4000/go/digest/2018/07/14/go-digest-4.html" rel="alternate" type="text/html" title="Go дайджест #4: Go 1.11 Beta 1, WebAssembly and Go, GraphQL, Apple Metal API and Go" /><published>2018-07-14T15:10:12+03:00</published><updated>2018-07-14T15:10:12+03:00</updated><id>http://localhost:4000/go/digest/2018/07/14/go-digest-4</id><content type="html" xml:base="http://localhost:4000/go/digest/2018/07/14/go-digest-4.html">&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">def print_hi(name) puts &quot;Hi, #{name}&quot; end print_hi('Tom') #=&amp;gt; prints 'Hi, Tom' to STDOUT.</summary></entry><entry><title type="html">Go дайджест #5: Go 1.11 c поддержкой модулей и WebAssembly, отказоустойчивость в микросервисной архитектуре</title><link href="http://localhost:4000/go/digest/2018/09/08/go-digest-5.html" rel="alternate" type="text/html" title="Go дайджест #5: Go 1.11 c поддержкой модулей и WebAssembly, отказоустойчивость в микросервисной архитектуре" /><published>2018-09-08T15:10:12+03:00</published><updated>2018-09-08T15:10:12+03:00</updated><id>http://localhost:4000/go/digest/2018/09/08/go-digest-5</id><content type="html" xml:base="http://localhost:4000/go/digest/2018/09/08/go-digest-5.html">&lt;p&gt;&lt;em&gt;В выпуске: Robustness of Go, Clean code using decorators, Go modules простыми словами, методы обработки ошибок, которые облегчают отладку.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">def print_hi(name) puts &quot;Hi, #{name}&quot; end print_hi('Tom') #=&amp;gt; prints 'Hi, Tom' to STDOUT.</summary></entry><entry><title type="html">Go дайджест #3: Go 1.10.2 and 1.9.6, новый брендинг для Go, NGINX Unit 1.0 сервер приложений с поддержкой Go</title><link href="http://localhost:4000/go/digest/2018/05/05/go-digest-3.html" rel="alternate" type="text/html" title="Go дайджест #3: Go 1.10.2 and 1.9.6, новый брендинг для Go, NGINX Unit 1.0 сервер приложений с поддержкой Go" /><published>2018-05-05T15:10:12+03:00</published><updated>2018-05-05T15:10:12+03:00</updated><id>http://localhost:4000/go/digest/2018/05/05/go-digest-3</id><content type="html" xml:base="http://localhost:4000/go/digest/2018/05/05/go-digest-3.html">&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;новости&quot;&gt;Новости&lt;/h2&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">def print_hi(name) puts &quot;Hi, #{name}&quot; end print_hi('Tom') #=&amp;gt; prints 'Hi, Tom' to STDOUT.</summary></entry><entry><title type="html">Go дайджест #2: Go 1.10.1 and 1.9.5, Blockchain Mining алгоритм, разработка Slack-ботов</title><link href="http://localhost:4000/go/digest/2018/03/31/go-digest-2.html" rel="alternate" type="text/html" title="Go дайджест #2: Go 1.10.1 and 1.9.5, Blockchain Mining алгоритм, разработка Slack-ботов" /><published>2018-03-31T15:10:12+03:00</published><updated>2018-03-31T15:10:12+03:00</updated><id>http://localhost:4000/go/digest/2018/03/31/go-digest-2</id><content type="html" xml:base="http://localhost:4000/go/digest/2018/03/31/go-digest-2.html">&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.golang.org/go1.11&quot;&gt;Go 1.11 Released&lt;/a&gt; — последний мажорный релиз с поддержкой &lt;a href=&quot;https://golang.org/doc/go1.11#modules&quot;&gt;модулей&lt;/a&gt; и эксперементальной поддержкой WebAssembly. &lt;a href=&quot;https://golang.org/doc/go1.11&quot;&gt;Release notes&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">def print_hi(name) puts &quot;Hi, #{name}&quot; end print_hi('Tom') #=&amp;gt; prints 'Hi, Tom' to STDOUT.</summary></entry><entry><title type="html">Go дайджест #1: Go 1.10rc2, dep dependency management, SOLID в Go</title><link href="http://localhost:4000/go/digest/2018/02/17/go-digest-1.html" rel="alternate" type="text/html" title="Go дайджест #1: Go 1.10rc2, dep dependency management, SOLID в Go" /><published>2018-02-17T14:10:12+02:00</published><updated>2018-02-17T14:10:12+02:00</updated><id>http://localhost:4000/go/digest/2018/02/17/go-digest-1</id><content type="html" xml:base="http://localhost:4000/go/digest/2018/02/17/go-digest-1.html">&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&quot;https://ukiahsmith.com/blog/a-gentle-introduction-to-golang-modules/&quot;&gt;A Gentle Introduction to Go Modules&lt;/a&gt; — Go modules простыми словами.&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">def print_hi(name) puts &quot;Hi, #{name}&quot; end print_hi('Tom') #=&amp;gt; prints 'Hi, Tom' to STDOUT.</summary></entry><entry><title type="html">Go дайджест #0: Go 1.10 Beta 2, Testing patterns, Concurrency patterns</title><link href="http://localhost:4000/go/digest/2018/01/13/go-digest-0.html" rel="alternate" type="text/html" title="Go дайджест #0: Go 1.10 Beta 2, Testing patterns, Concurrency patterns" /><published>2018-01-13T14:10:12+02:00</published><updated>2018-01-13T14:10:12+02:00</updated><id>http://localhost:4000/go/digest/2018/01/13/go-digest-0</id><content type="html" xml:base="http://localhost:4000/go/digest/2018/01/13/go-digest-0.html">&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/golang/go/wiki/Modules&quot;&gt;Go 1.11’s Versioned Modules Documentation&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">def print_hi(name) puts &quot;Hi, #{name}&quot; end print_hi('Tom') #=&amp;gt; prints 'Hi, Tom' to STDOUT.</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://posener.github.io/http2/&quot;&gt;HTTP/2 Adventure in the Go World&lt;/a&gt; — net/http теперь поддерживает http/2, ну почти.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://madnight.github.io/githut/#/pull_requests/2018/2&quot;&gt;Go Was The Fastest Growing Language Used in GitHub Pull Requests in Q2 2018&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;tutorials-articles&quot;&gt;Tutorials &amp;amp; Articles&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://hackernoon.com/getting-started-with-go-development-in-the-new-google-pixelbook-8c305120e06a&quot;&gt;Getting Started with Go Development on the Pixelbook&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://azer.bike/journal/a-good-makefile-for-go/&quot;&gt;A Good Makefile for Go&lt;/a&gt; — пример Makefile, который включает „hot reloading”.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@KagundaJM/deploy-buffalo-app-to-digitalocean-5801d23b8068&quot;&gt;Deploy a Buffalo App to DigitalOcean with Docker&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.bartfokker.nl/posts/decorators/&quot;&gt;Clean Code using Decorators&lt;/a&gt; — как сделать код чище используя декораторы.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dizzy.zone/2018/07/28/Refactoring-Go-switch-statements/&quot;&gt;Refactoring Go Switch Statements&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://thinkfaster.co/2018/07/goodbye-python-hello-go/&quot;&gt;Goodbye Python, Hello Go&lt;/a&gt; — история одного разработчика о том, как он начал использовать Gо вместо Python.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.pubnub.com/blog/multiplayer-game-in-go-lang-with-pubnub/&quot;&gt;Build a Multiplayer Game in Go with PubNub&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dev.to/cia_rana/quick-tutorial-write-go-run-wasm-2ilf&quot;&gt;Write Go, Run WASM&lt;/a&gt; — очень короткий туториал по WebAssembly.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ewanvalentine.io/serverless-start-ups-in-golang-part-1/&quot;&gt;Building a Serverless Function using the Serverless Framework and Go&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.joincivil.com/interacting-with-ethereum-smart-contract-events-in-go-with-the-civil-events-crawler-7db484a78d5f?gi=f6da6a1f52cb&quot;&gt;Interacting with Ethereum Smart Contract Events in Go&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://banzaicloud.com/blog/error-handling-go/&quot;&gt;Some Go Error Handling Practices&lt;/a&gt; — несколько методов обработки ошибок, которые облегчают отладку.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://arslan.io/2018/08/26/using-go-modules-with-vendor-support-on-travis-ci/&quot;&gt;Using Go Modules with Vendor Support on Travis CI&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@trongdan_tran/circuit-breaker-and-retry-64830e71d0f6&quot;&gt;Circuit Breaker and Retry&lt;/a&gt; — отказоустойчивость в микросервисной архитектуре.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@wembleyleach/how-to-use-the-official-mongodb-go-driver-9f8aff716fdb&quot;&gt;How to Use the Official MongoDB Go Driver&lt;/a&gt; — включая использование модулей Go 1.11.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.cloudflare.com/porting-our-software-to-arm64/&quot;&gt;Cloudflare’s Journey Porting Its Software to ARM64&lt;/a&gt; — интересный опыт от Сloudflare о том, как они портировали свой код на ARM64.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://husio.github.io/blog/post/accessing-data-in-go/&quot;&gt;Accessing Data in Go&lt;/a&gt; — демонстрация подхода для доступа к данным при написании веб-приложений.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://hackernoon.com/go-webassembly-building-a-calculator-tutorial-70fff89db6a9&quot;&gt;Building a Calculator with Go WebAssemply&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://runbook.cloud/blog/posts/how-we-massively-reduced-our-aws-lambda-bill-with-go/&quot;&gt;’How We Massively Reduced Our AWS Lambda Bill With Go’&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;посмотреть&quot;&gt;Посмотреть&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=VVpRj3Po6K4&quot;&gt;Brian Kernighan on Go, Programming Languages, and Computer Science&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=ZPd_fKyrX48&quot;&gt;Linear Regression with Gradient Descent&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=sX8r6zATHGU&quot;&gt;Go: Building on the Shoulders of Giants and Stepping on a Few Toes&lt;/a&gt; — история Go и почему создатели языка приняли определенные дизайнерские решения.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=i2p0Snwk4gc&quot;&gt;Building a Network Command Line Interface Tool in Go&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=_2ZwhvIkgek&quot;&gt;Building Go Applications for the Open Cloud&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=40d26ZGfhR8&quot;&gt;The Robustness of Go&lt;/a&gt; — доклад охватывает проектные решения Go, которые помогают в создании надежных программ, но также и недостатки Go в этой области, особенно в сравнении с Erlang.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=NM7X4PIUQB0&quot;&gt;Building a Resilient Stream Processor in Go&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=lsBF58Q-DnY&quot;&gt;Dave Cheney — Don’t Just Check Errors, Handle Them Gracefully&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=wxkEQxvxs3w&quot;&gt;Building a Production-Ready Go Service in 30 Minutes&lt;/a&gt; — live coding сессия из GopherCon UK, на которой разрабатывается production-ready сервис и деплоится при помощи Docker.&lt;/p&gt;
+
+&lt;h2 id=&quot;инструменты-ибиблиотеки&quot;&gt;Инструменты и библиотеки&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/bvinc/go-sqlite-lite&quot;&gt;go-sqlite-lite&lt;/a&gt; — SQLite драйвер. Поддерживает SQLite’s &lt;a href=&quot;https://www.sqlite.org/backup.html&quot;&gt;online backup API&lt;/a&gt; и&lt;a href=&quot;https://www.sqlite.org/c3ref/blob_open.html&quot;&gt; BLOB incremental IO&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/securego/gosec&quot;&gt;gosec&lt;/a&gt; — проверка безопасности кода. Выполняет ряд правил над абстрактным синтаксическим деревом Go кода, чтобы выявить потенциальные проблемы.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/astaxie/beego&quot;&gt;Beego&lt;/a&gt; — Framework для быстрой разработки RESTful APIs.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/manifoldco/heighliner&quot;&gt;Heighliner&lt;/a&gt; — Continuous Delivery из GitHub в Kubernetes Cluster.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/UKHomeOffice/repo-security-scanner&quot;&gt;repo-security-scanner&lt;/a&gt; — CLI инструмент для поиска приватных ключей, паролей и т. д., которые были закомичены в Git.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/marianogappa/chart&quot;&gt;Chart&lt;/a&gt; — генерация графиков на основе данных из STDIN. Умеет генерировать „pie charts”, „bar charts” и т. д. во временную HTML-страницу.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/google/embiggen-disk&quot;&gt;embiggen-disk&lt;/a&gt; — рекурсивный Live-Resize файловой системы в Linux от Google.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://zikichombo.org/&quot;&gt;ZikiChombo&lt;/a&gt; — библиотека для обработки звука.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/anthonynsimon/bild&quot;&gt;Bild&lt;/a&gt; — коллекция алгоритмов параллельной обработки изображений. Ресайзинг, повороты, изменение цвета и т. д.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/ncw/rclone&quot;&gt;Rclone&lt;/a&gt; — ’Rsync for Cloud Storage’ поддерживает ~20 платформ.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/mb-14/gomarkov&quot;&gt;gomarkov&lt;/a&gt; — библиотека имплементирующая цепи Макова.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/kahing/goofys&quot;&gt;Goofys&lt;/a&gt; — POSIX-ish Amazon S3 File System. Позволяет примаунтить S3 бакет в виде файловой системы.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/alwindoss/morse&quot;&gt;morse&lt;/a&gt; — библиотека кодов Морзе. Мало ли что может произойти…)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://tech.buzzfeed.com/unleashing-the-a6a1a5da39d6?gi=584cddcd8f2b&quot;&gt;SSO Authentication Proxy от BuzzFeed&lt;/a&gt; — ребята из BuzzFeed выложили в open source свою реализацию SSO Authentication Proxy и описали, как она работает.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/tsenart/vegeta&quot;&gt;Vegeta&lt;/a&gt; — библиотека для тестирования HTTP-нагрузки с поддержкой HTTP/2.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/davecheney/gophercon2018-performance-tuning-workshop&quot;&gt;GopherCon 2018 Performance Tuning Workshop&lt;/a&gt; — код, упражнения и расписание GopherCon Performance Tuning Workshop от Dave Cheney.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/floyernick/fleep-go&quot;&gt;Fleep&lt;/a&gt; — библиотека для определения формата файла. Распознает около 100 форматов.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/jesseduffield/lazygit&quot;&gt;lazygit&lt;/a&gt; — консольный UI для Git-команд.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/uber-go/zap&quot;&gt;Zap&lt;/a&gt; — библиотека для логирования от Uber.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://engineering.invisionapp.com/post/go-health-scalable-checks-for-kubernetes/&quot;&gt;go-health&lt;/a&gt; — „Health Checking” библиотека для Go-Powered сервисов.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/variadico/noti&quot;&gt;Noti&lt;/a&gt; — мониторит процесс и тригерит уведомление по завершению.&lt;/p&gt;
+
+&lt;p&gt;← Предыдущий выпуск: &lt;a href=&quot;https://dou.ua/lenta/digests/go-digest-4/&quot;&gt;Go дайджест #4&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">В выпуске: Robustness of Go, Clean code using decorators, Go modules простыми словами, методы обработки ошибок, которые облегчают отладку.</summary></entry><entry><title type="html">Go дайджест #4: Go 1.11 Beta 1, WebAssembly and Go, GraphQL, Apple Metal API and Go</title><link href="http://localhost:4000/go/digest/2018/07/14/go-digest-4.html" rel="alternate" type="text/html" title="Go дайджест #4: Go 1.11 Beta 1, WebAssembly and Go, GraphQL, Apple Metal API and Go" /><published>2018-07-14T15:10:12+03:00</published><updated>2018-07-14T15:10:12+03:00</updated><id>http://localhost:4000/go/digest/2018/07/14/go-digest-4</id><content type="html" xml:base="http://localhost:4000/go/digest/2018/07/14/go-digest-4.html">&lt;p&gt;&lt;em&gt;В выпуске: как писать проекты на Go в 2018 году, High Performance Go, ТОП-1000 GitHub-репозиториев, отсортированных по количеству звезд.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;новости&quot;&gt;Новости&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://groups.google.com/forum/#!msg/golang-announce/_S9YQriFKuU/n6Q9DEpoAwAJ&quot;&gt;Go 1.10.3 and Go 1.9.7 Released&lt;/a&gt; — минорный релиз с исправлениями в GoCommand, crypto/tls, crypto/x509.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://groups.google.com/forum/#!msg/golang-nuts/vpVOVVMLa08/oQQQWX3rCgAJ&quot;&gt;Go 1.11 Beta 1 Released&lt;/a&gt; — не поддерживает vgo (ожидается в beta 2), но поддерживает WebAssembly output. &lt;a href=&quot;https://tip.golang.org/doc/go1.11&quot;&gt;Draft release notes.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.hntrends.com/2018/apr-golang-jumps-into-top-10.html?compare1=javascript&amp;amp;compare2=python&amp;amp;compare3=golang&amp;amp;compare4=ruby&quot;&gt;Go на &lt;nobr&gt;3-м&lt;/nobr&gt; месте&lt;/a&gt; среди самых популярных языков программирования в „Hacker News’s Hiring Trends”.&lt;/p&gt;
+
+&lt;h2 id=&quot;tutorials-articles&quot;&gt;Tutorials &amp;amp; Articles&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://boyter.org/posts/how-to-start-go-project-2018/&quot;&gt;How to Start A Go Project in 2018&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.zenika.com/go-webassembly-binding-structures-to-js-references-4eddd6fd4d23&quot;&gt;Binding Go Structures to JS References in WebAssembly&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://brianketelsen.com/web-assembly-and-go-a-look-to-the-future/&quot;&gt;Web Assembly and Go: A Look to The Future&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dev.to/hajimehoshi/gopherjs-vs-webassembly-for-go-148m&quot;&gt;GopherJS vs WebAssembly for Go&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://sebastian-holstein.de/post/2018-07-05-go-wasm-application/&quot;&gt;Using Go for WebAssembly Applications&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/dm03514-tech-blog/you-are-going-to-need-it-using-interfaces-and-dependency-injection-to-future-proof-your-designs-2cf6f58db192&quot;&gt;Using Interfaces and Dependency Injection to Future Proof Your Designs&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://sj14.gitlab.io/post/2018-07-01-go-unix-shell/&quot;&gt;Writing a Simple Shell in Go&lt;/a&gt; — еще один пример, который показывает, насколько хороша стандартная библиотека.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://itnext.io/storing-go-structs-in-redis-using-rejson-dab7f8fc0053?gi=32e9508e01cd&quot;&gt;Storing Go Structs in Redis using ReJSON&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.thepolyglotdeveloper.com/2018/05/getting-started-graphql-golang/&quot;&gt;Getting Started with GraphQL from Go&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://outcrawl.com/go-graphql-gateway-microservices/&quot;&gt;Using GraphQL with Microservices in Go&lt;/a&gt; — пример разработки интернет-магазина.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ryanmccue.ca/how-to-create-a-search-microservice/&quot;&gt;How to Create a Search Microservice&lt;/a&gt; — разработка поискового микросервиса с использованием ElasticSearch.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://outcrawl.com/go-graphql-realtime-chat/&quot;&gt;Realtime Chat with GraphQL Subscriptions in Go&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://outcrawl.com/go-microservices-cqrs-docker/&quot;&gt;Building a Microservice in Go Following the CQRS Pattern&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dmitri.shuralyov.com/blog/26&quot;&gt;Rendering a Triangle with Apple’s Metal API Using Go&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://povilasv.me/go-memory-management/&quot;&gt;An Exploration of Go Memory Management&lt;/a&gt; — обзор того, как работают Go allocators, и различных способов управления памятью.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.gojekengineering.com/using-job-queues-in-go-for-resilient-systems-638526316e7e?gi=c5a799db6567&quot;&gt;Using Job Queues in Go for Resilient Systems&lt;/a&gt; — Proof-of-concept используя RabbitMQ.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://tysonmaly.com/programming/go/test-driven-developement-with-golang-on-osx/&quot;&gt;Faster Test Driven Development With Go on macOS&lt;/a&gt; — используем fswatch и grc для автоматического запуска релевантных тестов при каждом изменении кода.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.freecodecamp.org/how-to-write-bulletproof-code-in-go-a-workflow-for-servers-that-cant-fail-10a14a765f22&quot;&gt;How to Write Bulletproof Code in Go&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.linuxjournal.com/content/back-github-and-gitlab-repositories-using-golang&quot;&gt;Backing Up GitHub and GitLab Repositories Using Go&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@shijuvar/writing-grpc-interceptors-in-go-bf3e7671fe48&quot;&gt;Writing gRPC Interceptors in Go&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ryanmccue.ca/how-to-setup-grpc-service-to-service-communication/&quot;&gt;How to Setup gRPC Service to Service Communication&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/myntra-engineering/my-journey-with-golang-web-services-4d922a8c9897&quot;&gt;Building Scalable Web Services in Go&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@mattholt/packaging-a-go-application-for-macos-f7084b00f6b5&quot;&gt;Packaging a Go Application for macOS&lt;/a&gt; — „упаковка” Go приложений без использования Xcode.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://scene-si.org/2018/05/08/protecting-api-access-with-jwt/&quot;&gt;Protecting API Access with JWT&lt;/a&gt; — пример использования JSON Web Tokens (JWT) для аутентификации API.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.melvinvivas.com/my-first-go-microservice/&quot;&gt;Rolling a Basic Go Microservice with MongoDB and Docker Multi-Stage Builds&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://phraseapp.com/blog/posts/internationalization-i18n-go/&quot;&gt;A Step-by-Step Guide to Go Internationalization&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@val_deleplace/go-code-refactoring-the-23x-performance-hunt-156746b522f7&quot;&gt;Go Code Refactoring: The 23x Performance Hunt&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://bmuschko.com/blog/go-testing-frameworks/&quot;&gt;Exploring The Landscape of Go Testing Frameworks&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://habr.com/post/415771/&quot;&gt;Компилятор Go: язык описания правил SSA оптимизаций&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;посмотреть&quot;&gt;Посмотреть&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=ADT25tuAx4A&quot;&gt;High Performance Go&lt;/a&gt; — использование performance tools, встроенных в Go runtime, GC и GC-friendly код.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=OdyXIi6DGYw&quot;&gt;Getting Started with OAuth2 in Go&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=FJQjUueBJ2A&quot;&gt;Understanding Running Go Programs through Profiling&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=-XSlev-d7UY&amp;amp;feature=youtu.be&quot;&gt;justforfunc #36: Versions, build constraints, and ldflags&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=rfXSrgIGrKo&quot;&gt;justforfunc #37: sync.Pool from the pool&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=8fi7uSYlOdc&quot;&gt;GOTO 2018: Containers From Scratch&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;инструменты-ибиблиотеки&quot;&gt;Инструменты и библиотеки&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/kaxap/arl/blob/master/README-Go.md&quot;&gt;Топ 1000 Github репозиториев, отсортированных по количеству звезд&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/hazbo/httpu&quot;&gt;httpu:&lt;/a&gt; ’Terminal-First’ HTTP клиент.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/oklog/ulid&quot;&gt;ULID (Universally Unique Lexicographically Sortable Identifier):&lt;/a&gt; более эффективная альтернатива GUID / UUID.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/gaia-pipeline/gaia&quot;&gt;Gaia:&lt;/a&gt; платформа для автоматизации, позволяющая создать мощные пайплайны. На основе HashiCorp’s go-plugin и gRPC поверх HTTP2.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/joncalhoun/form&quot;&gt;Form:&lt;/a&gt; создание HTML форм при помощи Go Structs.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/cheggaaa/pb&quot;&gt;pb:&lt;/a&gt; Progress Bar для консольных приложений.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/usefathom/fathom&quot;&gt;Fathom:&lt;/a&gt; аналитика для сайтов.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/valyala/fastjson&quot;&gt;fastjson:&lt;/a&gt; еще одна библиотека для парсинга JSON.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/zyedidia/micro&quot;&gt;Micro:&lt;/a&gt; nano-подобный текстовый редактор.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/umputun/remark&quot;&gt;Remark:&lt;/a&gt; система комментариев не отслеживающая пользователей. &lt;a href=&quot;https://remark42.com/demo/&quot;&gt;Демо.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/davecheney/httpstat&quot;&gt;httpstat:&lt;/a&gt; визуализация статистики HTTP запросов.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/go-xorm/xorm&quot;&gt;xorm:&lt;/a&gt; ORM для Go с поддержкой MySQL, Postgres, TiDB, SQLite, MS SQL, и Oracle.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://gitlab.com/sj14/go-heroku#readme&quot;&gt;go-heroku:&lt;/a&gt; деплоймент Go в Heroku при помощи GitLab CI.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/siddontang/go-mysql-elasticsearch&quot;&gt;go-mysql-elasticsearch:&lt;/a&gt; синхронизация данных из MySQL в Elasticsearch.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/romanyx/recaptcha&quot;&gt;recaptcha:&lt;/a&gt; Go обертка для reCAPTCHA.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/senorprogrammer/wtf&quot;&gt;WTF:&lt;/a&gt; информационный дашборд в терминале.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/myntra/golimit&quot;&gt;Golimit:&lt;/a&gt; распределенный и децентрализованный rate limiter.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/z7zmey/php-parser&quot;&gt;php-parser:&lt;/a&gt; A PHP Parser, использующий &lt;code class=&quot;highlighter-rouge&quot;&gt;goyacc&lt;/code&gt; и &lt;code class=&quot;highlighter-rouge&quot;&gt;golex&lt;/code&gt; библиотеки для для парсинга PHP в AST. &lt;a href=&quot;https://php-parser.com/&quot;&gt;Демо.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/stripe/stripe-go/blob/master/v32_migration_guide.md&quot;&gt;stripe-go:&lt;/a&gt; библиотека для работы со Stripe API.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/pions/webrtc&quot;&gt;Pion WebRTC:&lt;/a&gt; имплементация WebRTC Native Api на Go.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/aldor007/mort&quot;&gt;Mort:&lt;/a&gt; S3 совместимое хранилище и сервер обработки изображение. Умеет делать resize, rotate и crop изображений, конвертировать в разные форматы.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/salihciftci/liman&quot;&gt;Liman:&lt;/a&gt; Webapp для мониторинга Docker.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/shurcooL/githubv4&quot;&gt;githubv4:&lt;/a&gt; библиотека для GitHub’s GraphQL API v4&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/maciejkula/sbr-go&quot;&gt;sbr-go:&lt;/a&gt; Sequence-Based система прогнозирования&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/arsham/blush&quot;&gt;Blush:&lt;/a&gt; ’Цветной grep’. Утилита, позволяющая указать цвет для каждого совпадения.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/sgreben/jp&quot;&gt;jp:&lt;/a&gt; Bar charts, line charts, scatter plots, histograms в терминале.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/anexia-it/consulacl&quot;&gt;consulacl:&lt;/a&gt; библиотека для работы с Consul ACLs&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/esimov/pigo&quot;&gt;Pigo:&lt;/a&gt; Face Detection библиотека, основанная на подходе &lt;a href=&quot;https://arxiv.org/pdf/1305.4537.pdf&quot;&gt;Pixel Intensity Comparison-based Object (PICO) detection&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;← Предыдущий выпуск: &lt;a href=&quot;https://dou.ua/lenta/digests/go-digest-3/&quot;&gt;Go дайджест #3&lt;/a&gt;.&lt;br /&gt;
+Следующий выпуск: &lt;a href=&quot;https://dou.ua/lenta/digests/go-digest-5/&quot;&gt;Go дайджест #5&lt;/a&gt; →&lt;/p&gt;</content><author><name></name></author><summary type="html">В выпуске: как писать проекты на Go в 2018 году, High Performance Go, ТОП-1000 GitHub-репозиториев, отсортированных по количеству звезд.</summary></entry><entry><title type="html">Go дайджест #3: Go 1.10.2 and 1.9.6, новый брендинг для Go, NGINX Unit 1.0 сервер приложений с поддержкой Go</title><link href="http://localhost:4000/go/digest/2018/05/05/go-digest-3.html" rel="alternate" type="text/html" title="Go дайджест #3: Go 1.10.2 and 1.9.6, новый брендинг для Go, NGINX Unit 1.0 сервер приложений с поддержкой Go" /><published>2018-05-05T15:10:12+03:00</published><updated>2018-05-05T15:10:12+03:00</updated><id>http://localhost:4000/go/digest/2018/05/05/go-digest-3</id><content type="html" xml:base="http://localhost:4000/go/digest/2018/05/05/go-digest-3.html">&lt;p&gt;&lt;em&gt;В выпуске: vgo proposal — accepted, руководство по Go компилятору, способ хранения «чувствительных» данных и множество инструментов.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;новости&quot;&gt;Новости&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://groups.google.com/forum/#!msg/golang-announce/qXEbop4t-Wg/tOHb-KE3BAAJ&quot;&gt;Go 1.10.2 and Go 1.9.6 Released&lt;/a&gt; — в основном мелкие багфиксы.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.golang.org/go-brand&quot;&gt;Go’s New Brand&lt;/a&gt; — новый бренд и лого. Можно скачать &lt;a href=&quot;https://storage.googleapis.com/golang-assets/go-brand-book-v1.0.1.pdf&quot;&gt;«brand book»&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.nginx.com/blog/nginx-unit-1-0-released/&quot;&gt;NGINX Unit 1.0: An App Server That Supports Go (and Others)&lt;/a&gt; — NGINX Unit теперь production ready.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/golang/go/issues/24301#issuecomment-384349642&quot;&gt;The vgo Proposal Has Been Marked as Accepted&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;почитать&quot;&gt;Почитать&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.ribice.ba/golang-chrome-automation/&quot;&gt;Automate Chrome with Go and the Chrome Debugging Protocol&lt;/a&gt; — автоматизация Chrome browser при помощи Go и ChromeDP.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://cloudplatform.googleblog.com/2018/05/Open-sourcing-gVisor-a-sandboxed-container-runtime.html&quot;&gt;Google Releases gVisor, a Sandboxed Container Runtime&lt;/a&gt; — изолированный рантайм для контейнеров.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/golang/go/blob/master/src/cmd/compile/README.md&quot;&gt;An Official Introduction to the Go Compiler&lt;/a&gt; — краткое руководство по Go компилятору.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://cjohansen.no/processing-data-with-clojure-and-golang/&quot;&gt;Processing Data with Clojure and Go&lt;/a&gt; — сравнение производительности двух языков.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@peter.gtz/how-to-write-better-unit-tests-in-go-using-mocks-4dd05e867b17&quot;&gt;How to Write Better Unit Tests in Go Using Mocks&lt;/a&gt; — статья о том, как мокать сервисы используя &lt;a href=&quot;https://github.com/petergtz/pegomock&quot;&gt;Pegomock&lt;/a&gt; mocking framework.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://zvelo.com/securely-logging-tracing-http-requests-go/&quot;&gt;Securely Logging and Tracing HTTP Requests in Go&lt;/a&gt; — один из способов хранения «чувствительных» данных.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://go101.org/article/concurrent-common-mistakes.html&quot;&gt;Some Common Concurrent Programming Mistakes&lt;/a&gt; — часто допускаемые ошибки при работе с concurrency.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.melvinvivas.com/developing-microservices-using-kafka-and-mongodb/&quot;&gt;Asynchronous Processing with Go using Kafka and MongoDB&lt;/a&gt; — простой пример сложной архитектуры.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bionics.it/posts/parsing-drugbank-xml-or-any-large-xml-file-in-streaming-mode-in-go&quot;&gt;Parsing Large XML Files in Streaming Mode in Go&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://benjamincongdon.me/blog/2018/03/01/Scraping-the-Web-in-Golang-with-Colly-and-Goquery/&quot;&gt;Scraping the Web with Colly and Goquery&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://seandrumm.co.uk/blog/building-go-projects-with-docker-on-gitlab-ci/&quot;&gt;Building Go Projects with Docker on Gitlab CI&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://nicolasparada.netlify.com/posts/passwordless-auth-server/&quot;&gt;Implementing Passwordless Auth for a Go HTTP API&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;посмотреть&quot;&gt;Посмотреть&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=MzTcsI6tn-0&quot;&gt;Go Best Practices&lt;/a&gt; — практики и принципы написания кода «like the Go team».&lt;/p&gt;
+
+&lt;h2 id=&quot;инструменты-ибиблиотеки&quot;&gt;Инструменты и библиотеки&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/phogolabs/parcello&quot;&gt;Parcello&lt;/a&gt; — менеджер ресурсов для встраивания скриптов, картинок в бинарники.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/francoispqt/gojay&quot;&gt;Gojay&lt;/a&gt; — высокопроизводительный json encoder/decoder.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/bcongdon/corral&quot;&gt;Corral&lt;/a&gt; — Serverless MapReduce фреймворк на AWS Lambda.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/dinedal/textql&quot;&gt;TextQL&lt;/a&gt; — позволяет легко выполнять SQL для структурированного текста, такого как CSV или TSV. Под капотом он вставляет CSV в SQLite.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/itchyny/bed&quot;&gt;bed&lt;/a&gt; — Binary/Hex редактор.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/amlwwalker/got-qt&quot;&gt;Got-qt&lt;/a&gt; — фреймворк для разработки кроссплатформенных GUI на Go и QML.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/cjbassi/gotop&quot;&gt;gotop&lt;/a&gt; — Activity Monitor для терминала.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/dmulholland/ironclad&quot;&gt;Ironclad&lt;/a&gt; — менеджер паролей для командной строки.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/buraksezer/gsocks5&quot;&gt;gsocks5&lt;/a&gt; — надежный SOCKS5 сервер.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/shuLhan/haminer&quot;&gt;haminer&lt;/a&gt; — библиотека для парсинга и форварда логов HAProxy в InfuxDB.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/senseyeio/spaniel&quot;&gt;Spaniel&lt;/a&gt; — библиотека для управления временными интервалами.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/mjl-/duit&quot;&gt;duit&lt;/a&gt; — кроссплатформенный UI Toolkit.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/thedevsaddam/govalidator&quot;&gt;govalidator&lt;/a&gt; — request валидатор. Вдохновлен Laravel request валидатором.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/raviqqe/muffet&quot;&gt;Muffet&lt;/a&gt; — утилита для рекурсивной проверки ссылок на сайте.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/buraksezer/olricdb&quot;&gt;olricdb&lt;/a&gt; — распределенное, In-Memory Key/Value хранилище.&lt;/p&gt;</content><author><name></name></author><summary type="html">В выпуске: vgo proposal — accepted, руководство по Go компилятору, способ хранения «чувствительных» данных и множество инструментов.</summary></entry><entry><title type="html">Go дайджест #2: Go 1.10.1 and 1.9.5, Blockchain Mining алгоритм, разработка Slack-ботов</title><link href="http://localhost:4000/go/digest/2018/03/31/go-digest-2.html" rel="alternate" type="text/html" title="Go дайджест #2: Go 1.10.1 and 1.9.5, Blockchain Mining алгоритм, разработка Slack-ботов" /><published>2018-03-31T15:10:12+03:00</published><updated>2018-03-31T15:10:12+03:00</updated><id>http://localhost:4000/go/digest/2018/03/31/go-digest-2</id><content type="html" xml:base="http://localhost:4000/go/digest/2018/03/31/go-digest-2.html">&lt;p&gt;&lt;em&gt;В выпуске: поддержка HTTPS Proxies в Go 1.10, состоялся релиз &lt;nobr&gt;vim-go&lt;/nobr&gt; 1.17, туториал по multithreading in Go, коллекция бенчмарков производительности Go пакетов и алгоритмов.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;новости&quot;&gt;Новости&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://groups.google.com/forum/#!msg/golang-announce/IkPkOF8JqLs/TFBbWHJYAwAJ&quot;&gt;Go 1.10.1 and Go 1.9.5&lt;/a&gt; — изменения коснулись компилятора, runtime, go command, и archive/zip, crypto/tls, crypto/x509, encoding/json, net, net/http, net/http/pprof пакетов.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@mlowicki/https-proxies-support-in-go-1-10-b956fb501d6b&quot;&gt;Поддержка HTTPS Proxies в Go 1.10&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://caddyserver.com/blog/caddy-0_10_11-released&quot;&gt;Caddy 0.10.11&lt;/a&gt; — теперь с распределенным Auto-HTTPS и Service Discovery.&lt;/p&gt;
+
+&lt;p&gt;Новость для тех, кто знает, как выйти из vim. &lt;a href=&quot;https://github.com/fatih/vim-go/releases/tag/v1.17&quot;&gt;Состоялся релиз &lt;nobr&gt;vim-go&lt;/nobr&gt; 1.17&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;почитать&quot;&gt;Почитать&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.cloudflare.com/using-go-as-a-scripting-language-in-linux/&quot;&gt;Использование Go в качестве скриптового языка в Linux&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://outcrawl.com/go-url-shortener-lambda/&quot;&gt;Туториал по разработке URL Shortener при помощи Go и AWS Lambda&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@mycoralhealth/code-your-own-blockchain-mining-algorithm-in-go-82c6a71aba1f&quot;&gt;Туториал по разработке Blockchain Mining алгоритма&lt;/a&gt; — не пытайтесь на этом разбогатеть)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://vincent.bernat.im/en/blog/2017-systemd-golang&quot;&gt;Интеграция Go Service с systemd&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/quii/learn-go-with-tests&quot;&gt;TDD подход при разработке на Go&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://stackimpact.com/blog/practical-golang-benchmarks/&quot;&gt;Коллекция бенчмарков производительности Go пакетов и алгоритмов&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@amalec/alexa-skills-with-go-54db0c21e758&quot;&gt;Туториал по разработке Amazon Alexa Skills&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.calhoun.io/using-the-service-object-pattern-in-go/&quot;&gt;Туториал по использованию Service Object Pattern&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://brendanjryan.com/golang/profiling/2018/02/28/profiling-go-applications.html&quot;&gt;Профилирование Go приложений при помощи Flamegraphs&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.merovius.de/2018/02/25/persistent_datastructures_with_go.html&quot;&gt;Immutable структуры данных, реализованные с использованием интерфейсов&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ieftimov.com/golang-datastructures-linked-lists&quot;&gt;Структуры данных: Linked Lists&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pragmacoders.com/multithreading-go-tutorial/&quot;&gt;Multithreading in Go — Туториал&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.danmrichards.com/blog/2018/03/26/goroutines-channels-and-waitgroups/&quot;&gt;Goroutines, Channels, and WaitGroups&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.sohamkamani.com/blog/2018/02/18/golang-data-race-and-how-to-fix-it/&quot;&gt;Data Races и как с ними бороться&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://x-team.com/blog/writing-slackbots-with-goroutines/&quot;&gt;Туториал по разработке Slack ботов&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Все еще недостаточно информации для чтения? &lt;a href=&quot;https://github.com/enocom/gopher-reading-list&quot;&gt;Gopher’s Reading List&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;посмотреть&quot;&gt;Посмотреть&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=yszygk1cpEc&quot;&gt;Advanced Testing with Go&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=VAGodyl84OY&quot;&gt;Разработка REST API используя ORM&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=_jQ3i_fyqGA&quot;&gt;The Basics of Protocol Buffers&lt;/a&gt; — взгляд на один из самых основополагающих компонентов gRPC.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=HdDOnJKyjhc&quot;&gt;Performance and Scaling Techniques using Go Assembly&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;инструменты-ибиблиотеки&quot;&gt;Инструменты и библиотеки&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/dearplain/goloader&quot;&gt;Goloader&lt;/a&gt; — загрузка и выполнение Go кода в runtime.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/github/git-sizer&quot;&gt;git-sizer&lt;/a&gt; — вычисляет различные показатели размера для git-репозиториев и помечает те, которые могут вызвать проблемы.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/zricethezav/gitleaks&quot;&gt;GitLeaks&lt;/a&gt; — проверяет git-репозитории на содержание секретных ключей.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/GoogleCloudPlatform/skaffold&quot;&gt;Skaffold&lt;/a&gt; — command line инструмент, который облегчает непрерывную разработку приложений Kubernetes.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blitiri.com.ar/p/chasquid/&quot;&gt;chasquid&lt;/a&gt; — SMTP Server. Еще в beta, но уже поддерживает TLS, проверку SPF и другие мощные фичи.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/balacode/one-file-pdf&quot;&gt;one-file-pdf&lt;/a&gt; — минималистичный PDF-генератор&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/erroneousboat/slack-term&quot;&gt;Slack-Term:&lt;/a&gt; — Terminal-Based клиент для Slack&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/gen2brain/go-fitz&quot;&gt;go-fitz&lt;/a&gt; — Обертка для &lt;a href=&quot;https://mupdf.com/&quot;&gt;MuPDF&lt;/a&gt;, который может извлекать страницы с PDF/EPUB/XPS.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/hajimehoshi/go-mp3&quot;&gt;go-mp3&lt;/a&gt; — MP3 decoder&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/fullstorydev/grpcurl&quot;&gt;gRPCurl&lt;/a&gt; — сommand-line инструмент для коммуникации с gRPC сервером.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/git-chglog/git-chglog&quot;&gt;git-chglog&lt;/a&gt; — сhangelog-генератор.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/jiajunhuang/guard&quot;&gt;Guard&lt;/a&gt; — высокопроизводительный Circuit Breaker и Proxy сервер. Proxy сервер основан на fasthttp.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/jinzhu/now&quot;&gt;Now&lt;/a&gt; — Toolkit для работы с временем.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/appleboy/gorush&quot;&gt;gorush&lt;/a&gt; — Push Notification Server поддерживающий APNS и Firebase.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/araddon/dateparse&quot;&gt;Go Date Parser&lt;/a&gt; — парсит даты используя state machine для поиска формата.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/hasura/gitkube&quot;&gt;Gitkube&lt;/a&gt; — инструмент для разработки и развертывания Docker images в Kubernetes при помощи git push.&lt;/p&gt;</content><author><name></name></author><summary type="html">В выпуске: поддержка HTTPS Proxies в Go 1.10, состоялся релиз vim-go 1.17, туториал по multithreading in Go, коллекция бенчмарков производительности Go пакетов и алгоритмов.</summary></entry><entry><title type="html">Go дайджест #1: Go 1.10rc2, dep dependency management, SOLID в Go</title><link href="http://localhost:4000/go/digest/2018/02/17/go-digest-1.html" rel="alternate" type="text/html" title="Go дайджест #1: Go 1.10rc2, dep dependency management, SOLID в Go" /><published>2018-02-17T14:10:12+02:00</published><updated>2018-02-17T14:10:12+02:00</updated><id>http://localhost:4000/go/digest/2018/02/17/go-digest-1</id><content type="html" xml:base="http://localhost:4000/go/digest/2018/02/17/go-digest-1.html">&lt;p&gt;&lt;em&gt;В выпуске: гайд по написанию Dockerfiles для Go, туториал по организации пакетов, introduction to testing in Go, high performance Go.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;новости&quot;&gt;Новости&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://groups.google.com/forum/#!msg/golang-announce/X7N1mvntnoU/jlQ4qXf6AAAJ&quot;&gt;Go 1.8.7, 1.9.4, and 1.10rc2 Released Due to Security Issue&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/golang/go/wiki/GerritBot&quot;&gt;Go Project Now Accepts Pull Requests via GitHub&lt;/a&gt; — теперь контрибьютить в Go можно и с помощью пул реквестов в GitHub.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://golang.github.io/dep/blog/2018/01/23/announce-v0.4.0.html&quot;&gt;Announcing dep v0.4.1, Now With Documentation&lt;/a&gt; — теперь у dep есть &lt;a href=&quot;https://golang.github.io/dep/&quot;&gt;официальный сайт&lt;/a&gt; и&lt;a href=&quot;https://golang.github.io/dep/docs/introduction.html&quot;&gt; онлайн-документация&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;почитать&quot;&gt;Почитать&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://about.gitlab.com/2018/01/23/how-a-fix-in-go-19-sped-up-our-gitaly-service-by-30x/&quot;&gt;Fix в Go 1.9 ускорил GitLab RPC Service в 30 раз&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://darahayes.com/publishing-golang-libraries-comprehensive-guide/&quot;&gt;Гайд по публикации библиотек&lt;/a&gt; — управление зависимостями, документация, тесты, CI и лицензирование.&lt;/p&gt;
+
+&lt;p&gt;Совсем недавно NGINX &lt;a href=&quot;https://hg.nginx.org/nginx/rev/641306096f5b&quot;&gt;добавили&lt;/a&gt; поддержку HTTP2 Server Push. &lt;a href=&quot;https://ops.tips/blog/nginx-http2-server-push/&quot;&gt;Туториал о том, как использовать это с Go.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.hasura.io/the-ultimate-guide-to-writing-dockerfiles-for-go-web-apps-336efad7012c?gi=e2667ca14e1c&quot;&gt;Гайд по написанию Dockerfiles для Go&lt;/a&gt; — пошаговое создание Dockerfile с live reloading и управлением зависимостями.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ieftimov.com/create-manage-macos-launchd-agents-golang&quot;&gt;Туториал по созданию и управлению macOS LaunchAgents&lt;/a&gt; — launchd, использование text/template для создание plist файлов, обработка сигналов, разница между «агентами» и «демонами».&lt;/p&gt;
+
+&lt;p&gt;В Go 1.8 добавлен инструмент для тестирования бета-версий и релиз-кандидатов. &lt;a href=&quot;https://pocketgophers.com/trying-other-versions/&quot;&gt;Туториал о том, как его использовать.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://golang.github.io/dep/docs/daily-dep.html&quot;&gt;Using ’dep’ For Day-To-Day Dependency Management&lt;/a&gt; — детальный разбор команд «dep ensure» и «dep status».&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.freecodecamp.org/an-intro-to-dep-how-to-manage-your-golang-project-dependencies-7b07d84e7ba5&quot;&gt;An Intro to dep: How to Manage Your Go Project Dependencies&lt;/a&gt; — туториал по управлению зависимостями в Go проектах.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ieftimov.com/golang-package-multiple-binaries&quot;&gt;Packing Multiple Binaries in a Go Package&lt;/a&gt; — туториал по организации пакетов, для новичков.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pragmacoders.com/building-a-json-api-in-golang/&quot;&gt;Туториал по разработке JSON API&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ryanmccue.ca/creating-a-url-shortener-api-with-the-goa-golang-framework/&quot;&gt;Создание «URL Shortener» API при помощи Goa Framework&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://hackernoon.com/golang-clean-archithecture-efd6d7c43047&quot;&gt;Clean Architecture on Golang&lt;/a&gt; — один из подходов к архитектуре вашего приложения.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://habrahabr.ru/post/348852/&quot;&gt;Принцип SOLID в языке Go&lt;/a&gt; — перевод статьи от Dave Chaney &lt;a href=&quot;https://dave.cheney.net/2016/08/20/solid-go-design&quot;&gt;«Solid Go Design»&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://sausheong.github.io/posts/space-invaders-with-go/&quot;&gt;Туториал по написанию игры «Space invaders»&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;посмотреть&quot;&gt;Посмотреть&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=iR7LPAXWfmw&quot;&gt;The State of Go 1.10&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=rDRa23k70CU&quot;&gt;Concurrency Patterns in Go&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=B64hIRjNvLc&quot;&gt;Two Ways of Merging a Number of Channels into One&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.infoq.com/presentations/go-programming-language&quot;&gt;High Performance Go&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=VBiFiguj52I&quot;&gt;Advanced Go Debugging with Delve&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=GlA57dHa5Rg&quot;&gt;An Introduction to Testing in Go&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=2IAzxPAoVi0&quot;&gt;Helpful Go Practices: Working with Time&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=R2HaxH7Et64&quot;&gt;Creating GopherJS Apps with gRPC-Web&lt;/a&gt;&lt;br /&gt;
+Using gRPC and Protocol Buffers from backend to browser.&lt;/p&gt;
+
+&lt;h2 id=&quot;инструменты-ибиблиотеки&quot;&gt;Инструменты и библиотеки&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/alash3al/wsify&quot;&gt;wsify (Websocketify):&lt;/a&gt; Realtime Pub/Sub Server&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/udhos/goben&quot;&gt;goben:&lt;/a&gt; инструмент для измерения пропускной способности TCP/UDP между хостами.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://miniflux.net/&quot;&gt;Miniflux:&lt;/a&gt; минималистичный RSS ридер.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/ServiceComb/go-chassis&quot;&gt;Go-Chassis:&lt;/a&gt; SDK для быстрой разработки микросервисов.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/rgburke/grv&quot;&gt;GRV:&lt;/a&gt; консольный интерфейс для просмотра git репозиториев.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/gen2brain/cam2ip&quot;&gt;cam2ip:&lt;/a&gt; библиотека, которая превращает любую web-камеру в IP камеру.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/jedisct1/dnscrypt-proxy&quot;&gt;DNSCrypt-Proxy 2:&lt;/a&gt; DNS прокси с поддержкой современных протоколов &lt;a href=&quot;https://github.com/DNSCrypt/dnscrypt-protocol/blob/master/DNSCRYPT-V2-PROTOCOL.txt&quot;&gt;DNSCrypt v2&lt;/a&gt; и&lt;a href=&quot;https://tools.ietf.org/html/draft-ietf-doh-dns-over-https-03&quot;&gt; DNS-over-HTTP/2&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/gen2brain/url2img&quot;&gt;url2img:&lt;/a&gt; HTTP Server c API для создания скриншотов веб-сайтов.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/gen2brain/goiv&quot;&gt;goiv:&lt;/a&gt; просмотрщик изображений.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/esimov/caire&quot;&gt;Caire:&lt;/a&gt; библиотека для ресайза изображений с учетом содержимого.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/gobuffalo/packr&quot;&gt;packr:&lt;/a&gt; библиотека для встраивания статики в бинарники Go.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://goreleaser.com/&quot;&gt;GoReleaser:&lt;/a&gt; инструмент для автоматизации релизов.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://mholt.github.io/json-to-go/&quot;&gt;JSON-to-Go:&lt;/a&gt; инструмент для преобразования JSON в Go структуру на лету.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/jaffee/commandeer&quot;&gt;Commandeer:&lt;/a&gt; автоматически устанавливает флаги командной строки на основе полей структур и их тегов.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/netzkern/butler&quot;&gt;Butler:&lt;/a&gt; инструмент для автоматизации создания новых проектов. Может создавать новые проекты на основе шаблонов, которые являются простыми git репозиториями.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/z7zmey/php-parser&quot;&gt;php-parser:&lt;/a&gt; PHP парсер на Go. Поддерживает синтаксис PHP 7 и PHP 5.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/mitchellh/go-server-timing&quot;&gt;go-server-timing:&lt;/a&gt; библиотека для использования &lt;a href=&quot;https://www.w3.org/TR/server-timing/&quot;&gt;HTTP Server-Timing&lt;/a&gt; в Go.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/aptible/supercronic&quot;&gt;Supercronic:&lt;/a&gt; cron для контейнеров, совместимый с crontab.&lt;/p&gt;</content><author><name></name></author><summary type="html">В выпуске: гайд по написанию Dockerfiles для Go, туториал по организации пакетов, introduction to testing in Go, high performance Go.</summary></entry><entry><title type="html">Go дайджест #0: Go 1.10 Beta 2, Testing patterns, Concurrency patterns</title><link href="http://localhost:4000/go/digest/2018/01/13/go-digest-0.html" rel="alternate" type="text/html" title="Go дайджест #0: Go 1.10 Beta 2, Testing patterns, Concurrency patterns" /><published>2018-01-13T14:10:12+02:00</published><updated>2018-01-13T14:10:12+02:00</updated><id>http://localhost:4000/go/digest/2018/01/13/go-digest-0</id><content type="html" xml:base="http://localhost:4000/go/digest/2018/01/13/go-digest-0.html">&lt;h2 id=&quot;новости&quot;&gt;Новости&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qXDhLR&quot;&gt;What’s New and Different in Go 1.10&lt;/a&gt; — обзор нововведений, которые нас ждут в Go 1.10. Уже сейчас можно ознакомиться с новыми возможностями, скачав последний релиз &lt;a href=&quot;http://bit.ly/2qVG7AZ&quot;&gt;1.10 Beta 2&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;почитать&quot;&gt;Почитать&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mxoin1&quot;&gt;Don’t just check errors, handle them gracefully&lt;/a&gt; — обработка ошибок в Go.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qY3tpC&quot;&gt;How To Embed Versioning Information In Go Applications&lt;/a&gt; — подход к версионированию в Go бинарниках.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mwPjat&quot;&gt;Understand Go Pointers in Fewer Than 800 Words&lt;/a&gt; — Dave Cheney объясняет, что такое указатели.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qWtupr&quot;&gt;The Go Type System&lt;/a&gt; — подробно о системе типов в Go для новичков.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qWmM2G&quot;&gt;The Ultimate Guide to Writing a Go Tool&lt;/a&gt; — подробное руководство по написанию утилиты для Go.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qVeUhY&quot;&gt;Микросервисы, gRPC и Kubernetes&lt;/a&gt; — введение в разработки микросервисов на Go c использованием gRPC и развертыванием в кластере Kubernetes.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mvKwWz&quot;&gt;Пошаговое руководство по написанию сервиса для Kubernetes&lt;/a&gt; &lt;a href=&quot;http://bit.ly/2qO7xZr&quot;&gt;Туториал&lt;/a&gt; по разработке Facebook бота используя Go и Messenger API.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qV0CxK&quot;&gt;Implementing 6 Sorting Algorithms&lt;/a&gt; — 6 алгоритмов сортировки, имплементированных на Go.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qRDjou&quot;&gt;A Guide to Effective Logging in Go&lt;/a&gt; — основы логирования в Go, стандартизация логов, минимизация влияния на производительность.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mrQRm7&quot;&gt;A Million WebSockets and Go&lt;/a&gt; — разработка высоконагруженного WebSocket-сервера в &lt;a href=&quot;http://mail.ru&quot;&gt;mail.ru&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qVDBKR&quot;&gt;Building a RESTful API with Go&lt;/a&gt; — туториал по разработке RESTful API на примере приложения «Телефонная книга».&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qVH9Nt&quot;&gt;Http Rate Limit&lt;/a&gt; — туториал по тому, как сделать rate limit запросов в вашем API.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qVQepx&quot;&gt;Reading files in Go&lt;/a&gt; — неплохая статья с описанием нескольких способов чтения файлов.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qXmecP&quot;&gt;Calling Go functions from other languages&lt;/a&gt; — вызов функций Go из других языков c примерами для С, Python, Ruby, Node и Java.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qUa30h&quot;&gt;Basic testing patterns in Go&lt;/a&gt; — основные шаблоны тестирования в Go.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qVBfeZ&quot;&gt;5 Advanced Testing Techniques in Go&lt;/a&gt; — статья для тех, кто хочет повысить уровень тестирования своих приложений.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2muFY2O&quot;&gt;Automating Go Development with ‘make’&lt;/a&gt; - отличная статья с примерами автоматизации разработки при помощи ‘make’.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mvvjol&quot;&gt;Don’t afraid of makefiles&lt;/a&gt; — еще один пример того, как можно улучшить процесс разработки используя ‘make’.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mtAoOb&quot;&gt;Go Concurrency Patterns: Pipelines and cancellation&lt;/a&gt; — реализация одного из concurrency паттернов.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qUwOBf&quot;&gt;Pipeline Patterns in Go&lt;/a&gt; — три примера использования pipeline паттерна.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mwt8B0&quot;&gt;Write a Mini Load Balancer to Learn Concurrency in Go&lt;/a&gt; — автор предлагает разобраться с concurrency, написав простой load balancer.&lt;/p&gt;
+
+&lt;h2 id=&quot;посмотреть&quot;&gt;Посмотреть&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2CQvhhb&quot;&gt;Capital Go 2017: Buffalo — Rapid Web Development in Go&lt;/a&gt; — знакомство с Web фреймворком Buffalo.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2CONxr1&quot;&gt;dotGo 2017: Debuggers from scratch&lt;/a&gt; — Liz Rice объясняет, как работает отладчик.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2moajA4&quot;&gt;dotGo 2017: Machine Learning and Go&lt;/a&gt; — краткое введение в машинное обучение с использованием Go.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qSzxLs&quot;&gt;just forfunc #26: why are there nil channels in Go?&lt;/a&gt; — автор пробует разобраться, зачем нужны nil каналы.&lt;/p&gt;
+
+&lt;h2 id=&quot;инструменты-ибиблиотеки&quot;&gt;Инструменты и библиотеки&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mwb3Db&quot;&gt;Awesome Go: 1200+ Go Links, Library and Tools&lt;/a&gt; — потрясающий список различных библиотек и инструментов.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2moFc7m&quot;&gt;go-web-framework-stars:&lt;/a&gt; список фреймворков для Go с наибольшим количеством звезд на GitHub.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mq42ni&quot;&gt;Go Play Space:&lt;/a&gt; — экспериментальная альтернатива Go Playground с подсветкой, темами и keyboard shortcuts.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qWiJmK&quot;&gt;HttpLive:&lt;/a&gt; — сервис, позволяющий mock’ать HTTP запросы.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2CKNNY7&quot;&gt;Hermes:&lt;/a&gt; — генератор responsive email сообщений. Портирован с библиотеки Node &lt;a href=&quot;http://bit.ly/2CMu6PI&quot;&gt;mailgen&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2CQFZEp&quot;&gt;Telebot 2:&lt;/a&gt; — фреймворк для разработки telegram ботов.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2mpUpF6&quot;&gt;Config: configuration library for Go&lt;/a&gt; — работает с переменными окружения, JSON файлами и умеет автоматически перезагружаться при
+ SIGHUP. &lt;a href=&quot;http://bit.ly/2momqNy&quot;&gt;go-base:&lt;/a&gt; Boilerplate для построения RESTful API.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2moDAdO&quot;&gt;Colly:&lt;/a&gt; — фреймворк для парсинга.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2qWmk4u&quot;&gt;kurly:&lt;/a&gt; альтернатива curl написанная на Go &lt;a href=&quot;http://bit.ly/2mqmNal&quot;&gt;Pixel:&lt;/a&gt; библиотека для разработки 2D игр.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.facebook.com/heartwilltell&quot;&gt;Sergey Hobot&lt;/a&gt; создал канал с новостями из мира Go в telegram, &lt;a href=&quot;http://bit.ly/2moD2EJ&quot;&gt;подписывайтесь&lt;/a&gt; :)&lt;/p&gt;
+
+&lt;!-- Следующий выпуск: [Go дайджест #1](http://dou.ua/lenta/digests/go-digest-1/) → --&gt;</content><author><name></name></author><summary type="html">Новости What’s New and Different in Go 1.10 — обзор нововведений, которые нас ждут в Go 1.10. Уже сейчас можно ознакомиться с новыми возможностями, скачав последний релиз 1.10 Beta 2.</summary></entry></feed>

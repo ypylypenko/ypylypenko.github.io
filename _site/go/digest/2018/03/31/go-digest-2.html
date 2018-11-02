@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  
+
   <head>
   <meta charset="utf-8">
   <title>Go дайджест #2: Go 1.10.1 and 1.9.5, Blockchain Mining алгоритм, разработка Slack-ботов</title>
@@ -9,31 +9,184 @@
 
 
   <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/about/">About</a>
-      <a href="/blog/">Blog</a>
-    </nav>
-    <h1>Go дайджест #2: Go 1.10.1 and 1.9.5, Blockchain Mining алгоритм, разработка Slack-ботов</h1>
-    <section>
-      
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="/about/">About</a>
+          <a class="nav-link" href="/blog/">Блог</a>
+          <!-- <a class="nav-link active" href="#">Home</a> -->
+        </nav>
+      </div>
+    </div>
+    <!--
+    <div class="blog-header">
+      <div class="container">
+        <h1 class="blog-title">The Bootstrap Blog</h1>
+        <p class="lead blog-description">An example blog template built with Bootstrap.</p>
+      </div>
+    </div> -->
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+    <div class="container">
 
+      <div class="row">
 
-    </section>
+        <div class="col-sm-8 blog-main">
 
-    <footer role="contentinfo">
+          <div class="blog-post">
+            <h2 class="blog-post-title">
+              Go дайджест #2: Go 1.10.1 and 1.9.5, Blockchain Mining алгоритм, разработка Slack-ботов
+            </h2>
+            <p class="blog-post-meta">January 1, 2014</p>
+            <p><em>В выпуске: поддержка HTTPS Proxies в Go 1.10, состоялся релиз <nobr>vim-go</nobr> 1.17, туториал по multithreading in Go, коллекция бенчмарков производительности Go пакетов и алгоритмов.</em></p>
 
+<h2 id="новости">Новости</h2>
+
+<p><a href="https://groups.google.com/forum/#!msg/golang-announce/IkPkOF8JqLs/TFBbWHJYAwAJ">Go 1.10.1 and Go 1.9.5</a> — изменения коснулись компилятора, runtime, go command, и archive/zip, crypto/tls, crypto/x509, encoding/json, net, net/http, net/http/pprof пакетов.</p>
+
+<p><a href="https://medium.com/@mlowicki/https-proxies-support-in-go-1-10-b956fb501d6b">Поддержка HTTPS Proxies в Go 1.10</a></p>
+
+<p><a href="https://caddyserver.com/blog/caddy-0_10_11-released">Caddy 0.10.11</a> — теперь с распределенным Auto-HTTPS и Service Discovery.</p>
+
+<p>Новость для тех, кто знает, как выйти из vim. <a href="https://github.com/fatih/vim-go/releases/tag/v1.17">Состоялся релиз <nobr>vim-go</nobr> 1.17</a>.</p>
+
+<h2 id="почитать">Почитать</h2>
+
+<p><a href="https://blog.cloudflare.com/using-go-as-a-scripting-language-in-linux/">Использование Go в качестве скриптового языка в Linux</a></p>
+
+<p><a href="https://outcrawl.com/go-url-shortener-lambda/">Туториал по разработке URL Shortener при помощи Go и AWS Lambda</a></p>
+
+<p><a href="https://medium.com/@mycoralhealth/code-your-own-blockchain-mining-algorithm-in-go-82c6a71aba1f">Туториал по разработке Blockchain Mining алгоритма</a> — не пытайтесь на этом разбогатеть)</p>
+
+<p><a href="https://vincent.bernat.im/en/blog/2017-systemd-golang">Интеграция Go Service с systemd</a></p>
+
+<p><a href="https://github.com/quii/learn-go-with-tests">TDD подход при разработке на Go</a></p>
+
+<p><a href="https://stackimpact.com/blog/practical-golang-benchmarks/">Коллекция бенчмарков производительности Go пакетов и алгоритмов</a></p>
+
+<p><a href="https://medium.com/@amalec/alexa-skills-with-go-54db0c21e758">Туториал по разработке Amazon Alexa Skills</a></p>
+
+<p><a href="https://www.calhoun.io/using-the-service-object-pattern-in-go/">Туториал по использованию Service Object Pattern</a></p>
+
+<p><a href="http://brendanjryan.com/golang/profiling/2018/02/28/profiling-go-applications.html">Профилирование Go приложений при помощи Flamegraphs</a></p>
+
+<p><a href="https://blog.merovius.de/2018/02/25/persistent_datastructures_with_go.html">Immutable структуры данных, реализованные с использованием интерфейсов</a></p>
+
+<p><a href="https://ieftimov.com/golang-datastructures-linked-lists">Структуры данных: Linked Lists</a></p>
+
+<p><a href="https://pragmacoders.com/multithreading-go-tutorial/">Multithreading in Go — Туториал</a></p>
+
+<p><a href="https://www.danmrichards.com/blog/2018/03/26/goroutines-channels-and-waitgroups/">Goroutines, Channels, and WaitGroups</a></p>
+
+<p><a href="https://www.sohamkamani.com/blog/2018/02/18/golang-data-race-and-how-to-fix-it/">Data Races и как с ними бороться</a></p>
+
+<p><a href="https://x-team.com/blog/writing-slackbots-with-goroutines/">Туториал по разработке Slack ботов</a></p>
+
+<p>Все еще недостаточно информации для чтения? <a href="https://github.com/enocom/gopher-reading-list">Gopher’s Reading List</a>.</p>
+
+<h2 id="посмотреть">Посмотреть</h2>
+
+<p><a href="https://www.youtube.com/watch?v=yszygk1cpEc">Advanced Testing with Go</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=VAGodyl84OY">Разработка REST API используя ORM</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=_jQ3i_fyqGA">The Basics of Protocol Buffers</a> — взгляд на один из самых основополагающих компонентов gRPC.</p>
+
+<p><a href="https://www.youtube.com/watch?v=HdDOnJKyjhc">Performance and Scaling Techniques using Go Assembly</a></p>
+
+<h2 id="инструменты-ибиблиотеки">Инструменты и библиотеки</h2>
+
+<p><a href="https://github.com/dearplain/goloader">Goloader</a> — загрузка и выполнение Go кода в runtime.</p>
+
+<p><a href="https://github.com/github/git-sizer">git-sizer</a> — вычисляет различные показатели размера для git-репозиториев и помечает те, которые могут вызвать проблемы.</p>
+
+<p><a href="https://github.com/zricethezav/gitleaks">GitLeaks</a> — проверяет git-репозитории на содержание секретных ключей.</p>
+
+<p><a href="https://github.com/GoogleCloudPlatform/skaffold">Skaffold</a> — command line инструмент, который облегчает непрерывную разработку приложений Kubernetes.</p>
+
+<p><a href="https://blitiri.com.ar/p/chasquid/">chasquid</a> — SMTP Server. Еще в beta, но уже поддерживает TLS, проверку SPF и другие мощные фичи.</p>
+
+<p><a href="https://github.com/balacode/one-file-pdf">one-file-pdf</a> — минималистичный PDF-генератор</p>
+
+<p><a href="https://github.com/erroneousboat/slack-term">Slack-Term:</a> — Terminal-Based клиент для Slack</p>
+
+<p><a href="https://github.com/gen2brain/go-fitz">go-fitz</a> — Обертка для <a href="https://mupdf.com/">MuPDF</a>, который может извлекать страницы с PDF/EPUB/XPS.</p>
+
+<p><a href="https://github.com/hajimehoshi/go-mp3">go-mp3</a> — MP3 decoder</p>
+
+<p><a href="https://github.com/fullstorydev/grpcurl">gRPCurl</a> — сommand-line инструмент для коммуникации с gRPC сервером.</p>
+
+<p><a href="https://github.com/git-chglog/git-chglog">git-chglog</a> — сhangelog-генератор.</p>
+
+<p><a href="https://github.com/jiajunhuang/guard">Guard</a> — высокопроизводительный Circuit Breaker и Proxy сервер. Proxy сервер основан на fasthttp.</p>
+
+<p><a href="https://github.com/jinzhu/now">Now</a> — Toolkit для работы с временем.</p>
+
+<p><a href="https://github.com/appleboy/gorush">gorush</a> — Push Notification Server поддерживающий APNS и Firebase.</p>
+
+<p><a href="https://github.com/araddon/dateparse">Go Date Parser</a> — парсит даты используя state machine для поиска формата.</p>
+
+<p><a href="https://github.com/hasura/gitkube">Gitkube</a> — инструмент для разработки и развертывания Docker images в Kubernetes при помощи git push.</p>
+
+          </div><!-- /.blog-post -->
+
+          <!-- <nav class="blog-pagination">
+            <a class="btn btn-outline-primary" href="#">Older</a>
+            <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+          </nav> -->
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 offset-sm-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+          </div>
+          <div class="sidebar-module">
+            <h4>Archives</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">March 2014</a></li>
+              <li><a href="#">February 2014</a></li>
+              <li><a href="#">January 2014</a></li>
+              <li><a href="#">December 2013</a></li>
+              <li><a href="#">November 2013</a></li>
+              <li><a href="#">October 2013</a></li>
+              <li><a href="#">September 2013</a></li>
+              <li><a href="#">August 2013</a></li>
+              <li><a href="#">July 2013</a></li>
+              <li><a href="#">June 2013</a></li>
+              <li><a href="#">May 2013</a></li>
+              <li><a href="#">April 2013</a></li>
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4>Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li>
+                <a href="#">GitHub</a>
+              </li>
+              <li>
+                <a href="#">Twitter</a>
+              </li>
+              <li>
+                <a href="#">Facebook</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="blog-footer">
+      <p>Blog template built for <a href="https://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   </body>
 </html>

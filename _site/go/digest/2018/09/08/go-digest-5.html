@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  
+
   <head>
   <meta charset="utf-8">
   <title>Go дайджест #5: Go 1.11 c поддержкой модулей и WebAssembly, отказоустойчивость в микросервисной архитектуре</title>
@@ -9,31 +9,212 @@
 
 
   <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/about/">About</a>
-      <a href="/blog/">Blog</a>
-    </nav>
-    <h1>Go дайджест #5: Go 1.11 c поддержкой модулей и WebAssembly, отказоустойчивость в микросервисной архитектуре</h1>
-    <section>
-      
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="/about/">About</a>
+          <a class="nav-link" href="/blog/">Блог</a>
+          <!-- <a class="nav-link active" href="#">Home</a> -->
+        </nav>
+      </div>
+    </div>
+    <!--
+    <div class="blog-header">
+      <div class="container">
+        <h1 class="blog-title">The Bootstrap Blog</h1>
+        <p class="lead blog-description">An example blog template built with Bootstrap.</p>
+      </div>
+    </div> -->
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+    <div class="container">
 
+      <div class="row">
 
-    </section>
+        <div class="col-sm-8 blog-main">
 
-    <footer role="contentinfo">
+          <div class="blog-post">
+            <h2 class="blog-post-title">
+              Go дайджест #5: Go 1.11 c поддержкой модулей и WebAssembly, отказоустойчивость в микросервисной архитектуре
+            </h2>
+            <p class="blog-post-meta">January 1, 2014</p>
+            <p><em>В выпуске: Robustness of Go, Clean code using decorators, Go modules простыми словами, методы обработки ошибок, которые облегчают отладку.</em></p>
 
+<h2 id="новости">Новости</h2>
+
+<p><a href="https://blog.golang.org/go1.11">Go 1.11 Released</a> — последний мажорный релиз с поддержкой <a href="https://golang.org/doc/go1.11#modules">модулей</a> и эксперементальной поддержкой WebAssembly. <a href="https://golang.org/doc/go1.11">Release notes</a>.</p>
+
+<p><a href="https://ukiahsmith.com/blog/a-gentle-introduction-to-golang-modules/">A Gentle Introduction to Go Modules</a> — Go modules простыми словами.</p>
+
+<p><a href="https://github.com/golang/go/wiki/Modules">Go 1.11’s Versioned Modules Documentation</a></p>
+
+<p><a href="https://posener.github.io/http2/">HTTP/2 Adventure in the Go World</a> — net/http теперь поддерживает http/2, ну почти.</p>
+
+<p><a href="https://madnight.github.io/githut/#/pull_requests/2018/2">Go Was The Fastest Growing Language Used in GitHub Pull Requests in Q2 2018</a>.</p>
+
+<h2 id="tutorials-articles">Tutorials &amp; Articles</h2>
+
+<p><a href="https://hackernoon.com/getting-started-with-go-development-in-the-new-google-pixelbook-8c305120e06a">Getting Started with Go Development on the Pixelbook</a></p>
+
+<p><a href="https://azer.bike/journal/a-good-makefile-for-go/">A Good Makefile for Go</a> — пример Makefile, который включает „hot reloading”.</p>
+
+<p><a href="https://medium.com/@KagundaJM/deploy-buffalo-app-to-digitalocean-5801d23b8068">Deploy a Buffalo App to DigitalOcean with Docker</a></p>
+
+<p><a href="https://www.bartfokker.nl/posts/decorators/">Clean Code using Decorators</a> — как сделать код чище используя декораторы.</p>
+
+<p><a href="https://dizzy.zone/2018/07/28/Refactoring-Go-switch-statements/">Refactoring Go Switch Statements</a></p>
+
+<p><a href="https://thinkfaster.co/2018/07/goodbye-python-hello-go/">Goodbye Python, Hello Go</a> — история одного разработчика о том, как он начал использовать Gо вместо Python.</p>
+
+<p><a href="https://www.pubnub.com/blog/multiplayer-game-in-go-lang-with-pubnub/">Build a Multiplayer Game in Go with PubNub</a></p>
+
+<p><a href="https://dev.to/cia_rana/quick-tutorial-write-go-run-wasm-2ilf">Write Go, Run WASM</a> — очень короткий туториал по WebAssembly.</p>
+
+<p><a href="https://ewanvalentine.io/serverless-start-ups-in-golang-part-1/">Building a Serverless Function using the Serverless Framework and Go</a></p>
+
+<p><a href="https://blog.joincivil.com/interacting-with-ethereum-smart-contract-events-in-go-with-the-civil-events-crawler-7db484a78d5f?gi=f6da6a1f52cb">Interacting with Ethereum Smart Contract Events in Go</a></p>
+
+<p><a href="https://banzaicloud.com/blog/error-handling-go/">Some Go Error Handling Practices</a> — несколько методов обработки ошибок, которые облегчают отладку.</p>
+
+<p><a href="https://arslan.io/2018/08/26/using-go-modules-with-vendor-support-on-travis-ci/">Using Go Modules with Vendor Support on Travis CI</a></p>
+
+<p><a href="https://medium.com/@trongdan_tran/circuit-breaker-and-retry-64830e71d0f6">Circuit Breaker and Retry</a> — отказоустойчивость в микросервисной архитектуре.</p>
+
+<p><a href="https://medium.com/@wembleyleach/how-to-use-the-official-mongodb-go-driver-9f8aff716fdb">How to Use the Official MongoDB Go Driver</a> — включая использование модулей Go 1.11.</p>
+
+<p><a href="https://blog.cloudflare.com/porting-our-software-to-arm64/">Cloudflare’s Journey Porting Its Software to ARM64</a> — интересный опыт от Сloudflare о том, как они портировали свой код на ARM64.</p>
+
+<p><a href="https://husio.github.io/blog/post/accessing-data-in-go/">Accessing Data in Go</a> — демонстрация подхода для доступа к данным при написании веб-приложений.</p>
+
+<p><a href="https://hackernoon.com/go-webassembly-building-a-calculator-tutorial-70fff89db6a9">Building a Calculator with Go WebAssemply</a>.</p>
+
+<p><a href="https://runbook.cloud/blog/posts/how-we-massively-reduced-our-aws-lambda-bill-with-go/">’How We Massively Reduced Our AWS Lambda Bill With Go’</a></p>
+
+<h2 id="посмотреть">Посмотреть</h2>
+
+<p><a href="https://www.youtube.com/watch?v=VVpRj3Po6K4">Brian Kernighan on Go, Programming Languages, and Computer Science</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=ZPd_fKyrX48">Linear Regression with Gradient Descent</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=sX8r6zATHGU">Go: Building on the Shoulders of Giants and Stepping on a Few Toes</a> — история Go и почему создатели языка приняли определенные дизайнерские решения.</p>
+
+<p><a href="https://www.youtube.com/watch?v=i2p0Snwk4gc">Building a Network Command Line Interface Tool in Go</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=_2ZwhvIkgek">Building Go Applications for the Open Cloud</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=40d26ZGfhR8">The Robustness of Go</a> — доклад охватывает проектные решения Go, которые помогают в создании надежных программ, но также и недостатки Go в этой области, особенно в сравнении с Erlang.</p>
+
+<p><a href="https://www.youtube.com/watch?v=NM7X4PIUQB0">Building a Resilient Stream Processor in Go</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=lsBF58Q-DnY">Dave Cheney — Don’t Just Check Errors, Handle Them Gracefully</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=wxkEQxvxs3w">Building a Production-Ready Go Service in 30 Minutes</a> — live coding сессия из GopherCon UK, на которой разрабатывается production-ready сервис и деплоится при помощи Docker.</p>
+
+<h2 id="инструменты-ибиблиотеки">Инструменты и библиотеки</h2>
+
+<p><a href="https://github.com/bvinc/go-sqlite-lite">go-sqlite-lite</a> — SQLite драйвер. Поддерживает SQLite’s <a href="https://www.sqlite.org/backup.html">online backup API</a> и<a href="https://www.sqlite.org/c3ref/blob_open.html"> BLOB incremental IO</a>.</p>
+
+<p><a href="https://github.com/securego/gosec">gosec</a> — проверка безопасности кода. Выполняет ряд правил над абстрактным синтаксическим деревом Go кода, чтобы выявить потенциальные проблемы.</p>
+
+<p><a href="https://github.com/astaxie/beego">Beego</a> — Framework для быстрой разработки RESTful APIs.</p>
+
+<p><a href="https://github.com/manifoldco/heighliner">Heighliner</a> — Continuous Delivery из GitHub в Kubernetes Cluster.</p>
+
+<p><a href="https://github.com/UKHomeOffice/repo-security-scanner">repo-security-scanner</a> — CLI инструмент для поиска приватных ключей, паролей и т. д., которые были закомичены в Git.</p>
+
+<p><a href="https://github.com/marianogappa/chart">Chart</a> — генерация графиков на основе данных из STDIN. Умеет генерировать „pie charts”, „bar charts” и т. д. во временную HTML-страницу.</p>
+
+<p><a href="https://github.com/google/embiggen-disk">embiggen-disk</a> — рекурсивный Live-Resize файловой системы в Linux от Google.</p>
+
+<p><a href="http://zikichombo.org/">ZikiChombo</a> — библиотека для обработки звука.</p>
+
+<p><a href="https://github.com/anthonynsimon/bild">Bild</a> — коллекция алгоритмов параллельной обработки изображений. Ресайзинг, повороты, изменение цвета и т. д.</p>
+
+<p><a href="https://github.com/ncw/rclone">Rclone</a> — ’Rsync for Cloud Storage’ поддерживает ~20 платформ.</p>
+
+<p><a href="https://github.com/mb-14/gomarkov">gomarkov</a> — библиотека имплементирующая цепи Макова.</p>
+
+<p><a href="https://github.com/kahing/goofys">Goofys</a> — POSIX-ish Amazon S3 File System. Позволяет примаунтить S3 бакет в виде файловой системы.</p>
+
+<p><a href="https://github.com/alwindoss/morse">morse</a> — библиотека кодов Морзе. Мало ли что может произойти…)</p>
+
+<p><a href="https://tech.buzzfeed.com/unleashing-the-a6a1a5da39d6?gi=584cddcd8f2b">SSO Authentication Proxy от BuzzFeed</a> — ребята из BuzzFeed выложили в open source свою реализацию SSO Authentication Proxy и описали, как она работает.</p>
+
+<p><a href="https://github.com/tsenart/vegeta">Vegeta</a> — библиотека для тестирования HTTP-нагрузки с поддержкой HTTP/2.</p>
+
+<p><a href="https://github.com/davecheney/gophercon2018-performance-tuning-workshop">GopherCon 2018 Performance Tuning Workshop</a> — код, упражнения и расписание GopherCon Performance Tuning Workshop от Dave Cheney.</p>
+
+<p><a href="https://github.com/floyernick/fleep-go">Fleep</a> — библиотека для определения формата файла. Распознает около 100 форматов.</p>
+
+<p><a href="https://github.com/jesseduffield/lazygit">lazygit</a> — консольный UI для Git-команд.</p>
+
+<p><a href="https://github.com/uber-go/zap">Zap</a> — библиотека для логирования от Uber.</p>
+
+<p><a href="https://engineering.invisionapp.com/post/go-health-scalable-checks-for-kubernetes/">go-health</a> — „Health Checking” библиотека для Go-Powered сервисов.</p>
+
+<p><a href="https://github.com/variadico/noti">Noti</a> — мониторит процесс и тригерит уведомление по завершению.</p>
+
+<p>← Предыдущий выпуск: <a href="https://dou.ua/lenta/digests/go-digest-4/">Go дайджест #4</a>.</p>
+
+          </div><!-- /.blog-post -->
+
+          <!-- <nav class="blog-pagination">
+            <a class="btn btn-outline-primary" href="#">Older</a>
+            <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+          </nav> -->
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 offset-sm-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+          </div>
+          <div class="sidebar-module">
+            <h4>Archives</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">March 2014</a></li>
+              <li><a href="#">February 2014</a></li>
+              <li><a href="#">January 2014</a></li>
+              <li><a href="#">December 2013</a></li>
+              <li><a href="#">November 2013</a></li>
+              <li><a href="#">October 2013</a></li>
+              <li><a href="#">September 2013</a></li>
+              <li><a href="#">August 2013</a></li>
+              <li><a href="#">July 2013</a></li>
+              <li><a href="#">June 2013</a></li>
+              <li><a href="#">May 2013</a></li>
+              <li><a href="#">April 2013</a></li>
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4>Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li>
+                <a href="#">GitHub</a>
+              </li>
+              <li>
+                <a href="#">Twitter</a>
+              </li>
+              <li>
+                <a href="#">Facebook</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="blog-footer">
+      <p>Blog template built for <a href="https://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   </body>
 </html>

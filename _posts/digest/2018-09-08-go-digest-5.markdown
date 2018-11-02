@@ -5,16 +5,120 @@ date:   2018-09-08 14:10:12 +0200
 categories: [go, digest]
 ---
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+_В выпуске: Robustness of Go, Clean code using decorators, Go modules простыми словами, методы обработки ошибок, которые облегчают отладку._
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+## Новости
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[Go 1.11 Released](https://blog.golang.org/go1.11) — последний мажорный релиз с поддержкой [модулей](https://golang.org/doc/go1.11#modules) и эксперементальной поддержкой WebAssembly. [Release notes](https://golang.org/doc/go1.11).
+
+[A Gentle Introduction to Go Modules](https://ukiahsmith.com/blog/a-gentle-introduction-to-golang-modules/) — Go modules простыми словами.
+
+[Go 1.11’s Versioned Modules Documentation](https://github.com/golang/go/wiki/Modules)
+
+[HTTP/2 Adventure in the Go World](https://posener.github.io/http2/) — net/http теперь поддерживает http/2, ну почти.
+
+[Go Was The Fastest Growing Language Used in GitHub Pull Requests in Q2 2018](https://madnight.github.io/githut/#/pull_requests/2018/2).
+
+## Tutorials & Articles
+
+[Getting Started with Go Development on the Pixelbook](https://hackernoon.com/getting-started-with-go-development-in-the-new-google-pixelbook-8c305120e06a)
+
+[A Good Makefile for Go](https://azer.bike/journal/a-good-makefile-for-go/) — пример Makefile, который включает „hot reloading”.
+
+[Deploy a Buffalo App to DigitalOcean with Docker](https://medium.com/@KagundaJM/deploy-buffalo-app-to-digitalocean-5801d23b8068)
+
+[Clean Code using Decorators](https://www.bartfokker.nl/posts/decorators/) — как сделать код чище используя декораторы.
+
+[Refactoring Go Switch Statements](https://dizzy.zone/2018/07/28/Refactoring-Go-switch-statements/)
+
+[Goodbye Python, Hello Go](https://thinkfaster.co/2018/07/goodbye-python-hello-go/) — история одного разработчика о том, как он начал использовать Gо вместо Python.
+
+[Build a Multiplayer Game in Go with PubNub](https://www.pubnub.com/blog/multiplayer-game-in-go-lang-with-pubnub/)
+
+[Write Go, Run WASM](https://dev.to/cia_rana/quick-tutorial-write-go-run-wasm-2ilf) — очень короткий туториал по WebAssembly.
+
+[Building a Serverless Function using the Serverless Framework and Go](https://ewanvalentine.io/serverless-start-ups-in-golang-part-1/)
+
+[Interacting with Ethereum Smart Contract Events in Go](https://blog.joincivil.com/interacting-with-ethereum-smart-contract-events-in-go-with-the-civil-events-crawler-7db484a78d5f?gi=f6da6a1f52cb)
+
+[Some Go Error Handling Practices](https://banzaicloud.com/blog/error-handling-go/) — несколько методов обработки ошибок, которые облегчают отладку.
+
+[Using Go Modules with Vendor Support on Travis CI](https://arslan.io/2018/08/26/using-go-modules-with-vendor-support-on-travis-ci/)
+
+[Circuit Breaker and Retry](https://medium.com/@trongdan_tran/circuit-breaker-and-retry-64830e71d0f6) — отказоустойчивость в микросервисной архитектуре.
+
+[How to Use the Official MongoDB Go Driver](https://medium.com/@wembleyleach/how-to-use-the-official-mongodb-go-driver-9f8aff716fdb) — включая использование модулей Go 1.11.
+
+[Cloudflare’s Journey Porting Its Software to ARM64](https://blog.cloudflare.com/porting-our-software-to-arm64/) — интересный опыт от Сloudflare о том, как они портировали свой код на ARM64.
+
+[Accessing Data in Go](https://husio.github.io/blog/post/accessing-data-in-go/) — демонстрация подхода для доступа к данным при написании веб-приложений.
+
+[Building a Calculator with Go WebAssemply](https://hackernoon.com/go-webassembly-building-a-calculator-tutorial-70fff89db6a9).
+
+[’How We Massively Reduced Our AWS Lambda Bill With Go’](https://runbook.cloud/blog/posts/how-we-massively-reduced-our-aws-lambda-bill-with-go/)
+
+## Посмотреть
+
+[Brian Kernighan on Go, Programming Languages, and Computer Science](https://www.youtube.com/watch?v=VVpRj3Po6K4)
+
+[Linear Regression with Gradient Descent](https://www.youtube.com/watch?v=ZPd_fKyrX48)
+
+[Go: Building on the Shoulders of Giants and Stepping on a Few Toes](https://www.youtube.com/watch?v=sX8r6zATHGU) — история Go и почему создатели языка приняли определенные дизайнерские решения.
+
+[Building a Network Command Line Interface Tool in Go](https://www.youtube.com/watch?v=i2p0Snwk4gc)
+
+[Building Go Applications for the Open Cloud](https://www.youtube.com/watch?v=_2ZwhvIkgek)
+
+[The Robustness of Go](https://www.youtube.com/watch?v=40d26ZGfhR8) — доклад охватывает проектные решения Go, которые помогают в создании надежных программ, но также и недостатки Go в этой области, особенно в сравнении с Erlang.
+
+[Building a Resilient Stream Processor in Go](https://www.youtube.com/watch?v=NM7X4PIUQB0)
+
+[Dave Cheney — Don’t Just Check Errors, Handle Them Gracefully](https://www.youtube.com/watch?v=lsBF58Q-DnY)
+
+[Building a Production-Ready Go Service in 30 Minutes](https://www.youtube.com/watch?v=wxkEQxvxs3w) — live coding сессия из GopherCon UK, на которой разрабатывается production-ready сервис и деплоится при помощи Docker.
+
+## Инструменты и библиотеки
+
+[go-sqlite-lite](https://github.com/bvinc/go-sqlite-lite) — SQLite драйвер. Поддерживает SQLite’s [online backup API](https://www.sqlite.org/backup.html) и[ BLOB incremental IO](https://www.sqlite.org/c3ref/blob_open.html).
+
+[gosec](https://github.com/securego/gosec) — проверка безопасности кода. Выполняет ряд правил над абстрактным синтаксическим деревом Go кода, чтобы выявить потенциальные проблемы.
+
+[Beego](https://github.com/astaxie/beego) — Framework для быстрой разработки RESTful APIs.
+
+[Heighliner](https://github.com/manifoldco/heighliner) — Continuous Delivery из GitHub в Kubernetes Cluster.
+
+[repo-security-scanner](https://github.com/UKHomeOffice/repo-security-scanner) — CLI инструмент для поиска приватных ключей, паролей и т. д., которые были закомичены в Git.
+
+[Chart](https://github.com/marianogappa/chart) — генерация графиков на основе данных из STDIN. Умеет генерировать „pie charts”, „bar charts” и т. д. во временную HTML-страницу.
+
+[embiggen-disk](https://github.com/google/embiggen-disk) — рекурсивный Live-Resize файловой системы в Linux от Google.
+
+[ZikiChombo](http://zikichombo.org/) — библиотека для обработки звука.
+
+[Bild](https://github.com/anthonynsimon/bild) — коллекция алгоритмов параллельной обработки изображений. Ресайзинг, повороты, изменение цвета и т. д.
+
+[Rclone](https://github.com/ncw/rclone) — ’Rsync for Cloud Storage’ поддерживает ~20 платформ.
+
+[gomarkov](https://github.com/mb-14/gomarkov) — библиотека имплементирующая цепи Макова.
+
+[Goofys](https://github.com/kahing/goofys) — POSIX-ish Amazon S3 File System. Позволяет примаунтить S3 бакет в виде файловой системы.
+
+[morse](https://github.com/alwindoss/morse) — библиотека кодов Морзе. Мало ли что может произойти...)
+
+[SSO Authentication Proxy от BuzzFeed](https://tech.buzzfeed.com/unleashing-the-a6a1a5da39d6?gi=584cddcd8f2b) — ребята из BuzzFeed выложили в open source свою реализацию SSO Authentication Proxy и описали, как она работает.
+
+[Vegeta](https://github.com/tsenart/vegeta) — библиотека для тестирования HTTP-нагрузки с поддержкой HTTP/2.
+
+[GopherCon 2018 Performance Tuning Workshop](https://github.com/davecheney/gophercon2018-performance-tuning-workshop) — код, упражнения и расписание GopherCon Performance Tuning Workshop от Dave Cheney.
+
+[Fleep](https://github.com/floyernick/fleep-go) — библиотека для определения формата файла. Распознает около 100 форматов.
+
+[lazygit](https://github.com/jesseduffield/lazygit) — консольный UI для Git-команд.
+
+[Zap](https://github.com/uber-go/zap) — библиотека для логирования от Uber.
+
+[go-health](https://engineering.invisionapp.com/post/go-health-scalable-checks-for-kubernetes/) — „Health Checking” библиотека для Go-Powered сервисов.
+
+[Noti](https://github.com/variadico/noti) — мониторит процесс и тригерит уведомление по завершению.
+
+← Предыдущий выпуск: [Go дайджест #4](https://dou.ua/lenta/digests/go-digest-4/).  

@@ -5,16 +5,92 @@ date:   2018-03-31 14:10:12 +0200
 categories: [go, digest]
 ---
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+_В выпуске: поддержка HTTPS Proxies в Go 1.10, состоялся релиз <nobr>vim-go</nobr> 1.17, туториал по multithreading in Go, коллекция бенчмарков производительности Go пакетов и алгоритмов._
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+## Новости
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[Go 1.10.1 and Go 1.9.5](https://groups.google.com/forum/#!msg/golang-announce/IkPkOF8JqLs/TFBbWHJYAwAJ) — изменения коснулись компилятора, runtime, go command, и archive/zip, crypto/tls, crypto/x509, encoding/json, net, net/http, net/http/pprof пакетов.
+
+[Поддержка HTTPS Proxies в Go 1.10](https://medium.com/@mlowicki/https-proxies-support-in-go-1-10-b956fb501d6b)
+
+[Caddy 0.10.11](https://caddyserver.com/blog/caddy-0_10_11-released) — теперь с распределенным Auto-HTTPS и Service Discovery.
+
+Новость для тех, кто знает, как выйти из vim. [Состоялся релиз <nobr>vim-go</nobr> 1.17](https://github.com/fatih/vim-go/releases/tag/v1.17).
+
+## Почитать
+
+[Использование Go в качестве скриптового языка в Linux](https://blog.cloudflare.com/using-go-as-a-scripting-language-in-linux/)
+
+[Туториал по разработке URL Shortener при помощи Go и AWS Lambda](https://outcrawl.com/go-url-shortener-lambda/)
+
+[Туториал по разработке Blockchain Mining алгоритма](https://medium.com/@mycoralhealth/code-your-own-blockchain-mining-algorithm-in-go-82c6a71aba1f) — не пытайтесь на этом разбогатеть)
+
+[Интеграция Go Service с systemd](https://vincent.bernat.im/en/blog/2017-systemd-golang)
+
+[TDD подход при разработке на Go](https://github.com/quii/learn-go-with-tests)
+
+[Коллекция бенчмарков производительности Go пакетов и алгоритмов](https://stackimpact.com/blog/practical-golang-benchmarks/)
+
+[Туториал по разработке Amazon Alexa Skills](https://medium.com/@amalec/alexa-skills-with-go-54db0c21e758)
+
+[Туториал по использованию Service Object Pattern](https://www.calhoun.io/using-the-service-object-pattern-in-go/)
+
+[Профилирование Go приложений при помощи Flamegraphs](http://brendanjryan.com/golang/profiling/2018/02/28/profiling-go-applications.html)
+
+[Immutable структуры данных, реализованные с использованием интерфейсов](https://blog.merovius.de/2018/02/25/persistent_datastructures_with_go.html)
+
+[Структуры данных: Linked Lists](https://ieftimov.com/golang-datastructures-linked-lists)
+
+[Multithreading in Go — Туториал](https://pragmacoders.com/multithreading-go-tutorial/)
+
+[Goroutines, Channels, and WaitGroups](https://www.danmrichards.com/blog/2018/03/26/goroutines-channels-and-waitgroups/)
+
+[Data Races и как с ними бороться](https://www.sohamkamani.com/blog/2018/02/18/golang-data-race-and-how-to-fix-it/)
+
+[Туториал по разработке Slack ботов](https://x-team.com/blog/writing-slackbots-with-goroutines/)
+
+Все еще недостаточно информации для чтения? [Gopher’s Reading List](https://github.com/enocom/gopher-reading-list).
+
+## Посмотреть
+
+[Advanced Testing with Go](https://www.youtube.com/watch?v=yszygk1cpEc)
+
+[Разработка REST API используя ORM](https://www.youtube.com/watch?v=VAGodyl84OY)
+
+[The Basics of Protocol Buffers](https://www.youtube.com/watch?v=_jQ3i_fyqGA) — взгляд на один из самых основополагающих компонентов gRPC.
+
+[Performance and Scaling Techniques using Go Assembly](https://www.youtube.com/watch?v=HdDOnJKyjhc)
+
+## Инструменты и библиотеки
+
+[Goloader](https://github.com/dearplain/goloader) — загрузка и выполнение Go кода в runtime.
+
+[git-sizer](https://github.com/github/git-sizer) — вычисляет различные показатели размера для git-репозиториев и помечает те, которые могут вызвать проблемы.
+
+[GitLeaks](https://github.com/zricethezav/gitleaks) — проверяет git-репозитории на содержание секретных ключей.
+
+[Skaffold](https://github.com/GoogleCloudPlatform/skaffold) — command line инструмент, который облегчает непрерывную разработку приложений Kubernetes.
+
+[chasquid](https://blitiri.com.ar/p/chasquid/) — SMTP Server. Еще в beta, но уже поддерживает TLS, проверку SPF и другие мощные фичи.
+
+[one-file-pdf](https://github.com/balacode/one-file-pdf) — минималистичный PDF-генератор
+
+[Slack-Term:](https://github.com/erroneousboat/slack-term) — Terminal-Based клиент для Slack
+
+[go-fitz](https://github.com/gen2brain/go-fitz) — Обертка для [MuPDF](https://mupdf.com/), который может извлекать страницы с PDF/EPUB/XPS.
+
+[go-mp3](https://github.com/hajimehoshi/go-mp3) — MP3 decoder
+
+[gRPCurl](https://github.com/fullstorydev/grpcurl) — сommand-line инструмент для коммуникации с gRPC сервером.
+
+[git-chglog](https://github.com/git-chglog/git-chglog) — сhangelog-генератор.
+
+[Guard](https://github.com/jiajunhuang/guard) — высокопроизводительный Circuit Breaker и Proxy сервер. Proxy сервер основан на fasthttp.
+
+[Now](https://github.com/jinzhu/now) — Toolkit для работы с временем.
+
+[gorush](https://github.com/appleboy/gorush) — Push Notification Server поддерживающий APNS и Firebase.
+
+[Go Date Parser](https://github.com/araddon/dateparse) — парсит даты используя state machine для поиска формата.
+
+[Gitkube](https://github.com/hasura/gitkube) — инструмент для разработки и развертывания Docker images в Kubernetes при помощи git push.
