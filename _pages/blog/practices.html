@@ -1,0 +1,594 @@
+<article id="post-331" class="post-331 page type-page status-publish hentry">
+      <header class="entry-header">
+      <h1 class="entry-title">Dev curricula</h1>    </header><!-- .entry-header -->
+  <div class="entry-content">
+    <p style="text-align:justify;"><em>This is a listing of articles about concepts I find essential for any developer to know. This is organized in order of most base structural concepts to most high level concepts and includes good practices, principles, and lists of articles, conference talks and books on software development.<br>
+</em></p>
+<p style="text-align:justify;">This page is in constant enhancement.</p>
+<ul>
+<li style="text-align:justify;">
+<h4><strong>Good Practices</strong></h4>
+<ul>
+<li>
+<h5>Reflect the architecture in the code folder structure<strong><br>
+</strong></h5>
+<p>Doing structural encapsulation makes it a lot easier to communicate bounded contexts, dependencies, layers, related functionality and purpose of grouped classes.&nbsp;Close proximity in the tree suggests closer coupling. The top level should reflect the software usage, so it should be named according to the Domain, but in broad encapsulated concepts, because as business evolve the domain details might change. [<a href="http://verraes.net/2011/10/code-folder-structure/" target="_blank" rel="noopener">Mathias Verraes</a>, <a href="https://vimeo.com/43612849#t=553s" target="_blank" rel="noopener">Robert C. Martin</a>]</p>
+<p>Make the architecture predictable and readable. Once you’ve agreed on an overall architectural structure for your project, make it obvious where the main elements are located. It will reduce time wasted, keep consistency, prevent lost code and avoid unaware code duplication. [<a href="http://chrismm.com/blog/writing-good-code-reduce-the-cognitive-load/" target="_blank" rel="noopener">Christian Maioli</a>]</p></li>
+<li style="text-align:justify;">
+<h5>Clean Code</h5>
+<ul>
+<li><strong>Make the code predictable and readable</strong><br>
+Don’t code “your way”. Just follow your team coding standards. Make your code predictable and easy to read by coding the way people expect. [<a href="http://chrismm.com/blog/writing-good-code-reduce-the-cognitive-load/" target="_blank" rel="noopener">Christian Maioli</a>]</li>
+<li><strong>Create small, focused and encapsulated code units</strong><br>
+The approach when breaking a problem down should be to have each section as focused as possible, affecting only local state, without mixing in irrelevant issues, and without side-effects if at all possible. [<a href="http://chrismm.com/blog/writing-good-code-reduce-the-cognitive-load/" target="_blank" rel="noopener">Christian Maioli</a>]</li>
+<li><strong>Make it discrete and processable</strong><br>
+Using magic strings, magic array indexes and custom template language features will lead to a more disconnected codebase. [<a href="http://chrismm.com/blog/writing-good-code-reduce-the-cognitive-load/" target="_blank" rel="noopener">Christian Maioli</a>]</li>
+</ul>
+</li>
+<li>
+<h5>Conditionals (if, case)</h5>
+<ul>
+<li><strong>Avoid nested IF</strong> statements [<a href="http://chrismm.com/blog/writing-good-code-reduce-the-cognitive-load/" target="_blank" rel="noopener">Christian Maioli</a>]</li>
+<li><strong>Avoid ELSE</strong> statements [<a href="http://chrismm.com/blog/writing-good-code-reduce-the-cognitive-load/" target="_blank" rel="noopener">Christian Maioli</a>]</li>
+<li><strong>Encapsulate the IF condition</strong> in a meaningfully named method [<a href="http://chrismm.com/blog/writing-good-code-reduce-the-cognitive-load/" target="_blank" rel="noopener">Christian Maioli</a>]</li>
+<li><strong>Blocks inside conditionals should be one line long</strong>, a function call which, if named correctly, adds documentary value [<a href="https://vimeo.com/12643301" target="_blank" rel="noopener">Robert C. Martin</a>]</li>
+<li><strong>Do the exclusionary IFs first</strong>, and do early returns from those conditions. That leaves the bulk of the method body to do the expected work. [<a href="http://thenazg.blogspot.nl/2012/10/turn-those-if-branches-around.html?showComment=1351705830179#c8274619091504727949" target="_blank" rel="noopener">Matthew W. O’Phinney</a>]</li>
+<li><strong>Replace conditionals by polymorphism</strong>, when you have a conditional that chooses different behavior depending on the type of object.<br>
+<strong>Using inheritance:</strong> Extract the different behaviors into different subclasses and make the original method abstract. [<a href="https://youtu.be/4F72VULWFvc?t=5m57s" target="_blank" rel="noopener">Misko Hevery</a>]<br>
+<strong>Using composition:</strong> Extract the different behaviors into different classes and inject the one you want in the original class. [<a href="https://youtu.be/29MAL8pJImQ?t=22m55s" target="_blank" rel="noopener">Sandi Metz</a>]</li>
+</ul>
+</li>
+<li>
+<h5>Loops</h5>
+<ul>
+<li><strong>Blocks inside loops should be one line long</strong>, a function call which, if named correctly, adds documentary value [<a href="https://vimeo.com/12643301" target="_blank" rel="noopener">Robert C. Martin</a>]</li>
+</ul>
+</li>
+<li>
+<h5>Naming conventions</h5>
+<ul>
+<li><strong>Name your variables according to the class they contain</strong> [<a href="https://youtu.be/1_dpOZmKXBw?t=2m50s" target="_blank" rel="noopener">Mathias Verraes</a>]</li>
+<li><strong>Name functions/methods using a verb, according to their context and what they do</strong><br>
+Document the why. Relevant and contextual variable and function names are the way to do this. [<a href="https://vimeo.com/12643301" target="_blank" rel="noopener">Robert C. Martin</a>, <a href="http://chrismm.com/blog/writing-good-code-reduce-the-cognitive-load/" target="_blank" rel="noopener">Christian Maioli</a>]</li>
+<li><strong>Name your classes using a noun, according to their domain and architectural meaning</strong> [<a href="https://vimeo.com/12643301" target="_blank" rel="noopener">Robert C. Martin</a>]</li>
+<li>A class name should <strong>start by its domain meaning</strong> (ie. User) and be <strong>postfixed by their architectural meaning</strong> (ie. Factory) like UserFactory.</li>
+<li><strong>A class name should identify it without ambiguity</strong><br>
+Name your classes with a name as unique as possible, regardless of their namespace, so we don’t have to lose our focus from the code to go check the namespace.</li>
+</ul>
+</li>
+<li>
+<h5>Functions / methods</h5>
+<ul>
+<li>Should <strong>be as small as possible</strong> [<a href="https://vimeo.com/12643301" target="_blank" rel="noopener">Robert C. Martin</a>]</li>
+<li>Should have an <strong>explicit intent</strong>, both in its name and code [<a href="https://vimeo.com/12643301" target="_blank" rel="noopener">Robert C. Martin</a>]</li>
+<li>Should <strong>do one thing</strong> only and do it well. One thing means one level of abstraction (manipulating strings is one level, manipulating business rules is another level), or when nothing else can be extracted and meaningfully reused in another function or method [<a href="https://vimeo.com/12643301" target="_blank" rel="noopener">Robert C. Martin</a>]</li>
+<li>Methods in a class should be <strong>organized per level of abstraction</strong>, where the methods used by a method sit directly below it [<a href="https://vimeo.com/12643301" target="_blank" rel="noopener">Robert C. Martin</a>]</li>
+<li>Choose <strong>descriptive names</strong>, for <strong>small functions</strong>, that <strong>do one thing</strong> [<a href="https://vimeo.com/12643301" target="_blank" rel="noopener">Robert C. Martin</a>]</li>
+<li>Should have <strong>at most 3 arguments</strong>, if we have more than 3 and they are conceptually related, we should group them in an object [<a href="https://vimeo.com/12643301" target="_blank" rel="noopener">Robert C. Martin</a>]</li>
+<li><strong>Do not use output-arguments</strong> (arguments to output data out of a function/method) [<a href="https://vimeo.com/12643301" target="_blank" rel="noopener">Robert C. Martin</a>]</li>
+<li><strong>Don’t use boolean arguments</strong>, use 2 functions/methods instead [<a href="https://vimeo.com/12643301" target="_blank" rel="noopener">Robert C. Martin</a>]</li>
+<li><strong>Comply to CQS</strong>, either:<br>
+– Do something (change state)<br>
+– Get something (return info about an object)<br>
+Not both [<a href="https://vimeo.com/12643301" target="_blank" rel="noopener">Robert C. Martin</a>]</li>
+<li><strong>Don’t return an error code</strong>, throw an exception instead [<a href="https://vimeo.com/12643301" target="_blank" rel="noopener">Robert C. Martin</a>, <a href="https://youtu.be/4F72VULWFvc?t=5m10s" target="_blank" rel="noopener">Misko Hevery</a>]</li>
+</ul>
+</li>
+<li>
+<h5>Classes</h5>
+<ul>
+<li><strong>Named constructors<br>
+</strong>Its OK to use them. [<a href="http://verraes.net/2014/06/named-constructors-in-php/" target="_blank" rel="noopener">Mathias Verraes</a>]</li>
+<li><strong>Static methods</strong><br>
+Use them when they are stateless and generic (not domain, so we can have different implementations of domain logic injected in different places)&nbsp;&nbsp;[<a href="http://verraes.net/2014/06/when-to-use-static-methods-in-php/" target="_blank" rel="noopener">Mathias Verraes</a>]</li>
+<li><strong>Private members access between sibling objects<br>
+</strong>It is handy, and OK, to do so in <em>restricted</em> situations, like comparing sibling objects properties.&nbsp; [<a href="http://verraes.net/2011/03/accessing-private-properties-from-other-instances/" target="_blank" rel="noopener">Mathias Verraes</a>]</li>
+<li><strong>Don’t set state by reference</strong><br>
+All state should be encapsulated and inaccessible from outside the object. If we set a property using a given reference, the given object is still accessible from outside. If needed, clone the object being set; [<a href="https://youtu.be/8d2AtAGJPno?t=6m50s" target="_blank" rel="noopener">Marco Pivetta</a>]</li>
+<li><strong id="dont-use-setters">Don’t use setters</strong><br>
+Change in an object state should be the consequence of a conceptual/domain operation applied and encapsulated in the object. The constructor should be the only state injection point. If a business logic only sets a data value, so be it, but don’t name the method as a setter, name it by the business logic it reflects; [<a href="https://ragazzo.github.io/immutability/oop/2016/05/03/immutability.html" target="_blank" rel="noopener">Mark Ragazzo</a>, <a href="https://youtu.be/8d2AtAGJPno?t=6m50s" target="_blank" rel="noopener">Marco Pivetta</a>, <a href="#tell-dont-ask">TellDontAsk</a>]</li>
+<li><strong id="avoid-getters">Avoid Getters</strong><br>
+Using getters is sometimes necessary, but most of the times they should not be necessary. Their mere existence encourages putting business logic outside the class that has the data necessary to fulfill that logic, breaking encapsulation; [<a href="#tell-dont-ask">TellDontAsk</a>]</li>
+<li><strong>Declare class as final<br>
+</strong>So it can’t inadvertently break <em>LSP</em>; [<a href="https://ragazzo.github.io/immutability/oop/2016/05/03/immutability.html" target="_blank" rel="noopener">Mark Ragazzo</a>, <a href="https://youtu.be/8d2AtAGJPno?t=6m50s" target="_blank" rel="noopener">Marco Pivetta</a>]</li>
+<li><strong>No mixed argument types</strong><br>
+Don’t use an array/collection with different types inside as a parameter; [<a href="https://youtu.be/8d2AtAGJPno?t=16m34s" target="_blank" rel="noopener">Marco Pivetta</a>]</li>
+<li><strong> No mixed return types</strong><br>
+Don’t return an array/collection with different types inside. If needed, use a value object to encapsulate the different types; [<a href="https://youtu.be/8d2AtAGJPno?t=16m34s" target="_blank" rel="noopener">Marco Pivetta</a>]</li>
+<li><strong>No boolean parameters</strong><br>
+A boolean parameter will most likely be a logic switch for the method logic. This means it is actually hiding 2 methods. Then its better to actually have two methods. [<a href="https://youtu.be/8d2AtAGJPno?t=11m" target="_blank" rel="noopener">Marco Pivetta</a>, Robert C. Martin]</li>
+<li><strong>N</strong><strong>ULL objects:</strong><br>
+<strong>As an argument</strong><br>
+When a class has an optional dependency on a service, it is common practice to initialize it with NULL. However, it might be more readable and less error prone to initialize that dependency with an object that fulfills the dependency but all its methods just do nothing. This makes it possible to <strong>not need to check if the dependency is set</strong> and will make sure <strong>no errors will occur if someone tries to use a non set dependency;</strong> [<a href="https://qafoo.com/blog/083_never_use_null.html" target="_blank" rel="noopener">qafoo.com</a>]<br>
+<strong>As a return value</strong><br>
+Never return null, <strong>return a null object</strong> or empty list instead, to reduce the conditionals needed by the client code; [<a href="https://youtu.be/4F72VULWFvc?t=5m10s" target="_blank" rel="noopener">Misko Hevery</a>, <a href="https://youtu.be/29MAL8pJImQ?t=10m29s" target="_blank" rel="noopener">Sandi Metz</a>]</li>
+<li><strong>Composition over inheritance</strong> [<a href="https://youtu.be/29MAL8pJImQ?t=22m53s" target="_blank" rel="noopener">Sandi Metz</a>]</li>
+</ul>
+</li>
+<li>
+<h5>Immutable objects [<a href="https://ragazzo.github.io/immutability/oop/2016/05/03/immutability.html" target="_blank" rel="noopener">Mark Ragazzo</a>, <a href="https://youtu.be/8d2AtAGJPno?t=6m50s" target="_blank" rel="noopener">Marco Pivetta</a>]</h5>
+<ul>
+<li>When you need to modify an immutable object we actually <strong>return a new object</strong> with the new state;</li>
+<li>Declare <strong>properties as private</strong> so state can’t be modified from outside the object, nor even extending classes;</li>
+<li><strong>Do not store references to mutable objects</strong> or mutable collections, in an immutable object. If we store a collection inside an immutable object, it should be immutable too, including its size, its elements and content of its elements;</li>
+<li><strong>Declare class as final<br>
+</strong>So it can’t be overridden adding methods that modify internal state;</li>
+</ul>
+</li>
+<li>
+<h5>Entities</h5>
+<ul>
+<li>They are the same if their <strong>ID</strong> is the same; [<a href="https://www.youtube.com/watch?v=ZJ63ltuwMaE" target="_blank" rel="noopener">Mathias Verraes</a>]</li>
+<li><strong>Don’t create/use anemic entities</strong><br>
+Entities should contain logic that manipulates their instances data, inside a specific object and between objects of the same type. However, they should not have knowledge about higher level domain processes. This is a fine line, easy to miss, and involves heavy ponderation and contextualization into the domain concepts; [<a href="https://youtu.be/ajhqScWECMo" target="_blank" rel="noopener">Ross Tuck</a>]</li>
+</ul>
+</li>
+<li>
+<h5>Value objects [<a href="https://youtu.be/8d2AtAGJPno?t=17m45s" target="_blank" rel="noopener">Marco Pivetta</a>, <a href="https://www.youtube.com/watch?v=ZJ63ltuwMaE" target="_blank" rel="noopener">Mathias Verraes</a>]</h5>
+<ul>
+<li>They are the same if their <strong>state</strong> is the same;</li>
+<li><em><strong>They ensure consistency</strong></em>, because the data is encapsulated and immutable.</li>
+<li><strong><em>They simplify data validation</em></strong>, because we don’t need to validate their data everywhere its needed (its validated when creating the value object);</li>
+<li><em><strong>They encapsulate state and behavior</strong></em> (including validation);</li>
+</ul>
+</li>
+<li>
+<h5>Exception Handling</h5>
+<ul>
+<li><strong>Don’t return an error code</strong>, throw an exception instead [<a href="https://vimeo.com/12643301" target="_blank" rel="noopener">Robert C. Martin</a>, <a href="https://youtu.be/4F72VULWFvc?t=5m10s" target="_blank" rel="noopener">Misko Hevery</a>]</li>
+<li>Always <strong>create your own exceptions</strong> hierarchy [<a href="https://www.toptal.com/qa/clean-code-and-the-art-of-exception-handling" target="_blank" rel="noopener">toptal.com</a>]</li>
+<li><strong>Handle the minimum</strong> exceptions as possible [<a href="https://www.toptal.com/qa/clean-code-and-the-art-of-exception-handling" target="_blank" rel="noopener">toptal.com</a>]</li>
+<li><strong>Handle exceptions as late</strong> as possible [<a href="https://www.toptal.com/qa/clean-code-and-the-art-of-exception-handling" target="_blank" rel="noopener">toptal.com</a>]</li>
+</ul>
+</li>
+<li>
+<h5>Business Rules</h5>
+<ul>
+<li><strong>BRs applicable to a Domain Object must be enforced by the object itself</strong>. For example, if a Costumer must always have an email, make it impossible to create a Customer entity without an email, by forcing its injection in the constructor; [<a href="https://www.youtube.com/watch?v=ZJ63ltuwMaE" target="_blank" rel="noopener">Mathias Verraes</a>]</li>
+<li><strong>If a BR should be enforced in a domain object sometimes and sometimes not,</strong> maybe we are missing some relevant domain concept, maybe <strong>we should be using two different domain objects</strong> instead. For example, if a customer sometimes doesn’t need an email and sometimes must have an email, maybe we should have a <em>ProspectiveCustomer</em> and a <em>PayingCustomer</em> entities; [<a href="https://www.youtube.com/watch?v=ZJ63ltuwMaE" target="_blank" rel="noopener">Mathias Verraes</a>]</li>
+<li>If the verification of a BR needs more than one object (ie an entity and a repository) encapsulate it in a <strong>SPECIFICATION object</strong>.</li>
+<li>When using a specification object to model a BR, <strong>encapsulate its different representations in the same specification object</strong> (ie code and SQL representations); [<a href="https://www.youtube.com/watch?v=ZJ63ltuwMaE" target="_blank" rel="noopener">Mathias Verraes</a>]</li>
+<li>When using a specification object, <strong>test the different representations of the BR by comparing their result</strong> against each other; [<a href="https://www.youtube.com/watch?v=ZJ63ltuwMaE" target="_blank" rel="noopener">Mathias Verraes</a>]</li>
+</ul>
+</li>
+<li>
+<h5>Modeling the domain</h5>
+<ul>
+<li><strong>Start modeling the domain by defining the use cases</strong> (ie <em>addProductToBasket</em>) and from there decide what commands, handlers, services, entities, value objects and repositories are needed; [<a href="https://www.youtube.com/watch?v=ZJ63ltuwMaE" target="_blank" rel="noopener">Mathias Verraes</a>]</li>
+</ul>
+</li>
+<li>
+<h5>Talks</h5>
+<ul>
+<li><a href="https://vimeo.com/12643301" target="_blank" rel="noopener">Clean Code 3: Functions</a> – 2008 – Robert C. Martin (<a href="https://herbertograca.com/2016/09/03/clean-code-3-functions-by-robert-c-martin-uncle-bob/" target="_blank" rel="noopener">my review</a>)</li>
+<li><a href="https://vimeo.com/13439458" target="_blank" rel="noopener">Clean Code 1: Arguments</a> (why CC?)- 2010 – Robert C. Martin (<a href="https://herbertograca.com/2015/09/20/clean-code-i-arguments-by-robert-c-martin-uncle-bob/" target="_blank" rel="noopener">my review</a>)</li>
+<li><a href="https://www.youtube.com/watch?v=tiwSmIQn1AI" target="_blank" rel="noopener">Your code sucks, lets fix it!</a> – 2014 – Rafael Dohms</li>
+<li><a href="https://youtu.be/1_dpOZmKXBw" target="_blank" rel="noopener">Extract Till You Drop</a> – 2014 – Matthias Verraes</li>
+<li><a href="https://youtu.be/ZJ63ltuwMaE" target="_blank" rel="noopener">Unbreakable Domain Models</a> – 2014 – Matthias Verraes</li>
+<li><a href="https://youtu.be/8d2AtAGJPno" target="_blank" rel="noopener">Extremely Defensive PHP</a> – 2015 – Marco Pivetta</li>
+<li><a href="https://youtu.be/29MAL8pJImQ" target="_blank" rel="noopener">Nothing is Something</a> – 2015 – Sandi Metz</li>
+<li><a href="https://www.youtube.com/watch?v=rMW6MZIREgg" target="_blank" rel="noopener">Writing code that lasts</a> – 2016 – Rafael Dohms</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4><strong>Principles</strong></h4>
+<ul>
+<li style="text-align:justify;"><strong>DRY</strong> – <em>Don’t Repeat Yourself</em></li>
+<li style="text-align:justify;"><strong>KISS</strong> – <em>Keep It Simple Stupid</em></li>
+<li style="text-align:justify;"><strong>Law of Demeter</strong><br>
+A component or object should not know about internal details of other components or objects (Encapsulation).</li>
+<li style="text-align:justify;"><strong>YAGNI</strong> – <em>You Ain’t Gonna Need It</em><br>
+If some code, methods, classes are not needed now, don’t leave them there just in case they are needed in the future. Not even if they are commented out. Who knows how it will look in the future, we might end up spending time updating code that is not used, we might never need it, we can always rebuild it or get it from the VCS.</li>
+<li style="text-align:justify;"><strong id="tell-dont-ask">TellDontAsk</strong> [<a href="http://martinfowler.com/bliki/TellDontAsk.html" target="_blank" rel="noopener">Martin Fowler</a>, <a href="#dont-use-setters">Don’t use setters</a>, <a href="#avoid-getters">Avoid getters</a>]<br>
+Instead of having a class with getters and setters and call those methods to perform some business logic, we should encapsulate that business logic inside the class that has the data and create a method named after the business logic we are implementing.</li>
+<li style="text-align:justify;"><strong>STUPID</strong> [<a href="http://nikic.github.io/2011/12/27/Dont-be-STUPID-GRASP-SOLID.html" target="_blank" rel="noopener">nikic</a>]
+<ul>
+<li><strong>S</strong>ingleton</li>
+<li><strong>T</strong>ight coupling</li>
+<li><strong>U</strong>ntestability</li>
+<li><strong>P</strong>remature Optimization</li>
+<li><strong>I</strong>ndescriptive Naming</li>
+<li><strong>D</strong>uplication</li>
+</ul>
+</li>
+<li><strong>SOLID</strong>&nbsp;– Robert C. Martin
+<ul>
+<li><strong>SRP – Single responsibility principle</strong> – <em>A class should have only a single responsibility</em>
+<ul>
+<li><a href="https://docs.google.com/open?id=0ByOwmqah_nuGNHEtcU5OekdDMkk" target="_blank" rel="noopener">SRP: The Single Responsibility Principle</a></li>
+<li><a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074" target="_blank" rel="noopener">SOLID: Part 1 – The Single Responsibility Principle</a></li>
+<li><a href="http://www.sitepoint.com/the-single-responsibility-principle/" target="_blank" rel="noopener">The Single Responsibility Principle</a></li>
+<li><a href="https://vimeo.com/43592685" target="_blank" rel="noopener">The Single Responsibility Principle</a> – Robert C. Martin (<a href="https://vimeo.com/43592685" target="_blank" rel="noopener">video</a>)</li>
+</ul>
+</li>
+<li><strong>OCP – Open/closed principle</strong> – <em>Software entities … should be open for extension, but closed for modification</em>
+<ul>
+<li><a href="https://drive.google.com/file/d/0BwhCYaYDn8EgN2M5MTkwM2EtNWFkZC00ZTI3LWFjZTUtNTFhZGZiYmUzODc1/view" target="_blank" rel="noopener">The Open-Closed Principle</a></li>
+<li><a href="http://code.tutsplus.com/tutorials/solid-part-2-the-openclosed-principle--net-36600" target="_blank" rel="noopener">SOLID: Part 2 – The Open/Closed Principle</a></li>
+<li><a href="http://www.sitepoint.com/the-open-closed-principle/" target="_blank" rel="noopener">The Open/Closed Principle</a></li>
+</ul>
+</li>
+<li><strong>LSP – Liskov substitution principle</strong> – <em>Objects in a program should be replaceable with instances of their subtypes</em>
+<ul>
+<li><a href="https://drive.google.com/file/d/0BwhCYaYDn8EgNzAzZjA5ZmItNjU3NS00MzQ5LTkwYjMtMDJhNDU5ZTM0MTlh/view" target="_blank" rel="noopener">The Liskov Substitution Principle</a></li>
+<li><a href="http://code.tutsplus.com/tutorials/solid-part-3-liskov-substitution-interface-segregation-principles--net-36710" target="_blank" rel="noopener">SOLID: Part 3 – Liskov Substitution &amp; Interface Segregation Principles</a></li>
+<li><a href="http://www.sitepoint.com/liskov-substitution-principle/" target="_blank" rel="noopener">The Liskov Substitution Principle</a></li>
+</ul>
+</li>
+<li><strong>ISP – Interface segregation principle</strong> – <em>Many client-specific interfaces are better than one general-purpose interface</em>
+<ul>
+<li><a href="https://drive.google.com/file/d/0BwhCYaYDn8EgOTViYjJhYzMtMzYxMC00MzFjLWJjMzYtOGJiMDc5N2JkYmJi/view" target="_blank" rel="noopener">The Interface Segregation Principle</a></li>
+<li><a href="http://code.tutsplus.com/tutorials/solid-part-3-liskov-substitution-interface-segregation-principles--net-36710" target="_blank" rel="noopener">SOLID: Part 3 – Liskov Substitution &amp; Interface Segregation Principles</a></li>
+</ul>
+</li>
+<li><strong>DIP – Dependency inversion principle</strong> – <em>Depend upon abstractions, not upon concretions</em>
+<ul>
+<li><a href="https://drive.google.com/file/d/0BwhCYaYDn8EgMjdlMWIzNGUtZTQ0NC00ZjQ5LTkwYzQtZjRhMDRlNTQ3ZGMz/view" target="_blank" rel="noopener">The Dependency Inversion Principle</a></li>
+<li><a href="http://code.tutsplus.com/tutorials/solid-part-4-the-dependency-inversion-principle--net-36872" target="_blank" rel="noopener">SOLID: Part 4 – The Dependency Inversion Principle</a></li>
+<li><a href="http://www.sitepoint.com/dip-intro/" target="_blank" rel="noopener">The Dependency Inversion Principle</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Package Cohesion Principles</strong> – Robert C. Martin
+<ul>
+<li><strong>REP</strong> – <a href="http://docs.google.com/a/cleancoder.com/viewer?a=v&amp;pid=explorer&amp;chrome=true&amp;srcid=0BwhCYaYDn8EgOGM2ZGFhNmYtNmE4ZS00OGY5LWFkZTYtMjE0ZGNjODQ0MjEx&amp;hl=en" target="_blank" rel="noopener">The Release Reuse Equivalence Principle</a> – <i>The granule of reuse is the granule of release</i></li>
+<li><strong>CCP</strong> –&nbsp;<a href="http://docs.google.com/a/cleancoder.com/viewer?a=v&amp;pid=explorer&amp;chrome=true&amp;srcid=0BwhCYaYDn8EgOGM2ZGFhNmYtNmE4ZS00OGY5LWFkZTYtMjE0ZGNjODQ0MjEx&amp;hl=en">The Common Closure Principle</a> –&nbsp;<i>Classes that change together are packaged together</i></li>
+<li><strong>CRP</strong> –&nbsp;<a href="http://docs.google.com/a/cleancoder.com/viewer?a=v&amp;pid=explorer&amp;chrome=true&amp;srcid=0BwhCYaYDn8EgOGM2ZGFhNmYtNmE4ZS00OGY5LWFkZTYtMjE0ZGNjODQ0MjEx&amp;hl=en">The Common Reuse Principle</a> –&nbsp;<i>Classes that are used together are packaged together</i></li>
+</ul>
+</li>
+<li><strong>Package Coupling Principles</strong>&nbsp;– Robert C. Martin
+<ul>
+<li><strong>ADP</strong> –&nbsp;<a href="http://docs.google.com/a/cleancoder.com/viewer?a=v&amp;pid=explorer&amp;chrome=true&amp;srcid=0BwhCYaYDn8EgOGM2ZGFhNmYtNmE4ZS00OGY5LWFkZTYtMjE0ZGNjODQ0MjEx&amp;hl=en">The Acyclic Dependencies Principle</a> –&nbsp;<i>The dependency graph of packages must have no cycles</i></li>
+<li><b>SDP</b> –&nbsp;<a href="http://docs.google.com/a/cleancoder.com/viewer?a=v&amp;pid=explorer&amp;chrome=true&amp;srcid=0BwhCYaYDn8EgZjI3OTU4ZTAtYmM4Mi00MWMyLTgxN2YtMzk5YTY1NTViNTBh&amp;hl=en">The Stable Dependencies Principle</a> –&nbsp;<i>Depend in the direction of stability</i></li>
+<li><b>SAP</b> –&nbsp;<a href="http://docs.google.com/a/cleancoder.com/viewer?a=v&amp;pid=explorer&amp;chrome=true&amp;srcid=0BwhCYaYDn8EgZjI3OTU4ZTAtYmM4Mi00MWMyLTgxN2YtMzk5YTY1NTViNTBh&amp;hl=en">The Stable Abstractions Principle</a> –&nbsp;<i>Abstractness increases with stability</i></li>
+</ul>
+</li>
+<li style="text-align:justify;"><a href="http://www.sitepoint.com/inversion-of-control-the-hollywood-principle/" target="_blank" rel="noopener"><strong>Inversion of Control</strong> – The Hollywood Principle</a> (NOT the Dep. Inv. Principle)</li>
+<li style="text-align:justify;"><strong>GRASP</strong> – “General Responsibility Assignment Software Patterns”
+<ul>
+<li style="text-align:justify;"><a href="https://en.wikipedia.org/wiki/GRASP_%28object-oriented_design%29" target="_blank" rel="noopener"><strong>Easy reading:</strong> Wikipedia</a></li>
+<li><a href="http://www.cs.cmu.edu/~aldrich/214/slides/design-grasp.pdf" target="_blank" rel="noopener"><strong>Complete reading:</strong> Carnegie Mellon School of Computer Science </a></li>
+<li>My own short descriptions:
+<ul>
+<li><strong>Controller</strong><br>
+<em>Controller pattern</em><br>
+A controller is defined as the first object beyond the UI layer that receives and coordinates (“controls”) a use case scenario.</li>
+<li><strong>Creator</strong><br>
+<em>Factory method, Abstract Factory and Builder patterns </em><br>
+In general, a class B should be responsible for creating instances of class A if one, or preferably more, of the following apply:<br>
+– Instances of B contain or compositely aggregate instances of A<br>
+– Instances of B record instances of A<br>
+– Instances of B closely use instances of A<br>
+– Instances of B have the initializing information for instances of A and pass it on creation.</li>
+<li><strong>High Cohesion</strong><br>
+The responsibilities of a given element are strongly related and highly focused. Relates to the SOLID Single Responsibility Principle.</li>
+<li><strong>Indirection</strong><br>
+<em>Mediator pattern</em><br>
+Increase low coupling by using a Mediator class to coordinate the interactions between two objects.</li>
+<li><strong>Information Expert</strong><br>
+<em>Encapsulation</em><br>
+Place a given responsibility on the class with the most information required to fulfill it.</li>
+<li><strong>Low Coupling</strong><br>
+Low coupling is an evaluative pattern that dictates how to assign responsibilities to support:<br>
+– lower dependency between the classes,<br>
+– change in one class having lower impact on other classes,<br>
+– higher reuse potential.</li>
+<li><strong>Polymorphism</strong><br>
+Usage of <em>inheritance</em>, <em>abstracts</em>, <em>interfaces</em>, <em>generics</em>, <em>overloading</em> and <em>overriding</em>.</li>
+<li><strong>Protected Variations</strong><br>
+<em>Bridge, adapter and similar patterns</em><br>
+Protect elements from the variations on other elements (objects, systems, subsystems) by wrapping the focus of instability with an interface and using polymorphism to create various implementations of this interface.</li>
+<li><strong>Pure Fabrication</strong><br>
+<em>Service class</em><br>
+Use Service classes, who do not represent a concept in the problem domain, specially made up to achieve low coupling, high cohesion, and reusability.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h5>Talks</h5>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=G32acYVd9LY" target="_blank" rel="noopener">Don’t Be STUPID GRASP SOLID</a> – 2013 – Anthony Ferrara (<a href="http://blog.ircmaxell.com/2012/11/slides-for-solid-talk-at-tnphp.html" target="_blank" rel="noopener">slides</a>)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4><strong>Design Patterns</strong></h4>
+<ul>
+<li>
+<h5>Articles</h5>
+<ul>
+<li><a href="http://www.javaworld.com/article/2078665/core-java/design-patterns--the-big-picture--part-1--design-pattern-history-and-classification.html" target="_blank" rel="noopener">Design patterns, the big picture, Part 1: Design pattern history and classification</a></li>
+<li><a href="http://www.javaworld.com/article/2078675/core-java/design-patterns--the-big-picture--part-2--gang-of-four-classics-revisited.html" target="_blank" rel="noopener">Design patterns, the big picture, Part 2: Gang-of-four classics revisited</a></li>
+<li><a href="https://sourcemaking.com/design_patterns" target="_blank" rel="noopener">SourceMaking :: Design Patterns</a> (easy explanation of many Design Patterns)</li>
+<li><a href="https://github.com/domnikl/DesignPatternsPHP" target="_blank" rel="noopener">DesignPatternsPHP</a> (PHP examples of many Design Patterns)</li>
+</ul>
+</li>
+<li>
+<h5>Talks</h5>
+<ul>
+<li><a href="https://youtu.be/dawFyaWvFg4" target="_blank" rel="noopener">Beyond Design Patterns</a> – 2015 – Anthony Ferrara</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4><strong>Architecture</strong></h4>
+<ul>
+<li>
+<h5 style="text-align:justify;">Articles</h5>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" target="_blank" rel="noopener">MVC</a> – 1979 – Trygve Reenskaug</li>
+<li><a href="https://en.wikipedia.org/wiki/Presentation%E2%80%93abstraction%E2%80%93control" target="_blank" rel="noopener">PAC</a> – 1987 – Joëlle Coutaz</li>
+<li><a href="http://stackoverflow.com/questions/26910974/model-view-controller-vs-boundary-control-entity" target="_blank" rel="noopener">BCE</a> – 1992 – Ivar Jacobson</li>
+<li><a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter" target="_blank" rel="noopener">MVP</a> – 1996 – Mike Potel</li>
+<li><a href="https://en.wikipedia.org/wiki/Hierarchical_model%E2%80%93view%E2%80%93controller" target="_blank" rel="noopener">HMVC</a> – 2000 – Jason Cai, Ranjit Kapila, Gaurav Pal</li>
+<li><a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel" target="_blank" rel="noopener">MVVM</a> – 2005 – Ken Cooper, Ted Peters</li>
+<li><a href="http://alistair.cockburn.us/Hexagonal+architecture" target="_blank" rel="noopener">Hexagonal Architecture</a> (aka Ports &amp; Adapters) – 2005 – Alistair Cockburn</li>
+<li><a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93adapter" target="_blank" rel="noopener">MVA</a> – 2008 – Sun Microsystems</li>
+<li><a href="https://en.wikipedia.org/wiki/Data,_context_and_interaction" target="_blank" rel="noopener">DCI</a> – 2008 –&nbsp;Trygve Reenskaug, James Coplien</li>
+<li><a href="http://jeffreypalermo.com/blog/the-onion-architecture-part-1/" target="_blank" rel="noopener">Onion Architecture</a> [<a href="http://jeffreypalermo.com/blog/the-onion-architecture-part-1/" target="_blank" rel="noopener">1</a>, <a href="http://jeffreypalermo.com/blog/the-onion-architecture-part-2/" target="_blank" rel="noopener">2</a>, <a href="http://jeffreypalermo.com/blog/the-onion-architecture-part-3/" target="_blank" rel="noopener">3</a>, <a href="http://jeffreypalermo.com/blog/onion-architecture-part-4-after-four-years/" target="_blank" rel="noopener">4</a>] – 2008 – Jeffrey Palermo</li>
+<li><a href="https://msdn.microsoft.com/en-us/library/ee658098.aspx" target="_blank" rel="noopener">Software Architecture and Design</a> – 2009 – MS App. Architecture Guide</li>
+<li><a href="http://ddd.fed.wiki.org/view/welcome-visitors/view/domain-driven-design" target="_blank" rel="noopener">Domain Driven Design</a> – 2011 –&nbsp;Ward Cunningham</li>
+<li><a href="https://8thlight.com/blog/uncle-bob/2011/09/30/Screaming-Architecture.html" target="_blank" rel="noopener">Screaming Architecture</a> – 2011 – Robert C. Martin</li>
+<li><a href="https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html" target="_blank" rel="noopener">Clean Architecture</a> – 2012 – Robert C. Martin</li>
+<li><a href="http://culttt.com/2014/11/26/strategies-integrating-bounded-contexts" target="_blank" rel="noopener">DDD – Integrating Bounded Contexts</a> – 2014 – Philip Brown @ Culttt</li>
+<li><a href="https://github.com/RestCheatSheet/platform-cheat-sheet" target="_blank" rel="noopener">Platform Building Cheat Sheet</a> – 2015 – <span class="commit-author-section">tfredrich</span></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li style="text-align:justify;">
+<h5>Talks</h5>
+<ul>
+<li><a href="https://vimeo.com/12674642" target="_blank" rel="noopener">Strategic Design</a> – 2008 – Eric Evans</li>
+<li><a href="https://youtu.be/hALFGQNeEnU" target="_blank" rel="noopener">Architecture the Lost Years</a> – 2011 – Robert C. Martin</li>
+<li><a href="https://youtu.be/asLUTiJJqdE" target="_blank" rel="noopener">Clean Architecture and Design</a> – 2012 – Robert C. Martin
+<ul>
+<li><a href="https://vimeo.com/43612849#t=553s" target="_blank" rel="noopener">Project structure</a></li>
+</ul>
+</li>
+<li><a href="https://youtu.be/ajhqScWECMo" target="_blank" rel="noopener">Models &amp; Service Layers; Hemoglobin &amp; Hobgoblins</a> – 2014 – Ross Tuck</li>
+<li><a href="https://youtu.be/aieoAWXNjl0" target="_blank" rel="noopener">How You Can Architect and Develop Enterprise Mission-Critical Applications with Domain-Driven Design</a> – 2014 – Vaughn Vernon</li>
+<li><a href="https://youtu.be/oFPbEi2463c" target="_blank" rel="noopener">How You Can Implement Aggregates and Domain Entities Effectively in Domain Models, with .NET</a> – 2014 – Vaughn Vernon</li>
+<li><a href="https://www.youtube.com/watch?v=GAFZcYlO5S0">Software Architecture vs. Code</a> – 2014 – Simon Brown (<a href="https://herbertograca.com/2015/11/10/software-architecture-vs-code-by-simon-brown/" target="_blank" rel="noopener">my review</a>)</li>
+<li style="text-align:justify;"><a href="https://www.youtube.com/watch?v=_rbF97T4480" target="_blank" rel="noopener">DDD and Hexagonal Architecture with Rails</a> – 2014 – Eric Roberts &amp; Declan Whelan</li>
+<li style="text-align:justify;"><a href="https://www.youtube.com/watch?v=6SBjKOwVq0o" target="_blank" rel="noopener">Hexagonal Architecture</a> – 2014 – Chris Fidao</li>
+<li><a href="https://www.youtube.com/watch?v=K1EJBmwg9EQ" target="_blank" rel="noopener">Hexagonal Architecture – Message-Oriented Software Design</a> – 2015 – Matthias Noback</li>
+<li><a href="https://www.youtube.com/watch?v=u6oTg5oRH24" target="_blank" rel="noopener">Hexagonal Architecture in DDD</a> – 2015 – Gordon Skinner</li>
+<li><a href="https://youtu.be/4UZZjyQDgT8" target="_blank" rel="noopener">oDDs and enDDs</a> – 2016 –&nbsp;Vaughn Vernon</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4><strong>Functional Programming</strong></h4>
+<ul>
+<li>
+<h5>Articles</h5>
+<ul>
+<li><a href="https://github.com/hemanth/functional-programming-jargon" target="_blank" rel="noopener">Functional Programming Jargon</a></li>
+</ul>
+</li>
+<li>
+<h5>Talks</h5>
+<ul>
+<li><a href="https://youtu.be/7Zlp9rKHGD4" target="_blank" rel="noopener">Functional Programming: The failure of state</a> – 2014 –&nbsp;Robert C. Martin</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4><strong>REST</strong></h4>
+<ul>
+<li>
+<h5>Articles</h5>
+<ul>
+<li><a href="http://www.restapitutorial.com/" target="_blank" rel="noopener">REST API Tutorial</a></li>
+<li><a href="https://github.com/RestCheatSheet/api-cheat-sheet#api-design-cheat-sheet" target="_blank" rel="noopener">API Cheat Sheet</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4><strong>Microservices</strong></h4>
+<ul>
+<li>
+<h5>Articles</h5>
+<ul>
+<li><a href="https://github.com/RestCheatSheet/microservices-cheat-sheet" target="_blank" rel="noopener">Cheat Sheets</a></li>
+<li><a href="http://martinfowler.com/articles/microservices.html" target="_blank" rel="noopener">Micro-Services</a> – Martin Fowler</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4><strong>Professionalism</strong></h4>
+<ul>
+<li>
+<h5>Guidelines</h5>
+<ul>
+<li><strong>A Programmer has the right to</strong> [<a href="https://herbertograca.com/2015/09/22/the-responsibility-of-knowing-by-robert-c-martin/" target="_blank" rel="noopener">Robert C. Martin, Kent Beck</a>]
+<ul>
+<li><strong>Know what is needed</strong> with clear declarations of priority;</li>
+<li><strong>Produce quality</strong> work at all times;</li>
+<li><strong>Ask for and receive help</strong> from pears, supervisors and customers;</li>
+<li><strong>Make and update their own estimates</strong>;</li>
+<li><strong>Accept responsibility</strong> instead of having them assigned</li>
+</ul>
+</li>
+<li><strong>A Customer has the right to</strong> [<a href="https://herbertograca.com/2015/09/22/the-responsibility-of-knowing-by-robert-c-martin/" target="_blank" rel="noopener">Robert C. Martin, Kent Beck</a>]
+<ul>
+<li><strong>An overall plan</strong>, when it can be accomplished and at what cost;</li>
+<li><strong>Get the most</strong> out of every programming week;</li>
+<li><strong>See progress</strong> in a running system, working by passing a set of tests they specify;</li>
+<li><strong>Change their mind</strong>, to substitute functionality, and to change priorities without paying exorbitant costs;</li>
+<li><strong>Be informed</strong> of a schedule change in order to reduce scope and restore the original date;</li>
+<li><strong>Cancel the project</strong> and be left with a system that runs and reflects investment to date.</li>
+</ul>
+</li>
+<li><strong>A CTO has the right to expect</strong> [<a href="https://herbertograca.com/2015/09/27/expecting-professionalism-by-robert-c-martin/" target="_blank" rel="noopener">Robert C. Martin</a>]
+<ul>
+<li><strong>We shall not ship crap!</strong></li>
+<li><strong>At the end of every iteration we are ready to deploy!</strong></li>
+<li><strong>Stable productivity</strong>:<br>
+We must be able to keep the code easy to maintain and develop further;</li>
+<li><strong>Continuous improvement</strong>:<br>
+We must continuously improve the code, following the boyscout rule;</li>
+<li><strong>Inexpensive adaptability</strong>:<br>
+Software must be easy to change;<br>
+We must accept changes in requirements;</li>
+<li><strong>Fearless competence</strong>:<br>
+We must not be afraid of modifying and improving the code;<br>
+We must have tests we trust, so we have no fear of changing code;</li>
+<li><strong>Extreme quality</strong>:<br>
+We must not allow a sloppy or careless attitude;</li>
+<li><strong>QA will find nothing</strong>:<br>
+We must demand of ourselves that the software reaches QA perfect;</li>
+<li><strong>Nothing is fragile</strong>:<br>
+Making a change will not break something completely unrelated;</li>
+<li><strong>We cover for each other</strong>:<br>
+We are a team, if a member can not be there, a colleague must be able to take charge;<br>
+A developer can not be working isolated, he must work together with colleagues. Do pair programming;</li>
+<li><strong>Honest estimates</strong>:<br>
+We must be honest about the exequibility of our estimates<br>
+If it can’t be done in the expected time frame we must say so. And we must not cave in when under pressure;<br>
+We can use a 3 possibilities frame:<br>
+1 – Estimate if everything goes perfect;<br>
+2 – Estimate if things go OK;<br>
+3 – Estimate if everything goes wrong;<br>
+We must be able to say NO!</li>
+<li><strong>Continuous aggressive learning</strong>:<br>
+Our industry evolves super fast, we must keep up;<br>
+We must read books, go to conferences, read articles, experiment;<br>
+The employer is not responsible for our learning nor our career;</li>
+<li><strong>Mentoring</strong>:<br>
+People coming out of school are not properly trained;<br>
+The more senior people must teach the younger ones;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h5>Talks</h5>
+<ul>
+<li><a href="https://vimeo.com/19053463" target="_blank" rel="noopener">Craftsmanship and Ethics</a> –&nbsp; 2011 – Robert C. Martin</li>
+<li><a href="https://vimeo.com/84618094" target="_blank" rel="noopener">The responsibility of knowing</a> – 2013 – Robert C. Martin (<a href="https://herbertograca.com/2015/09/22/the-responsibility-of-knowing-by-robert-c-martin/" target="_blank" rel="noopener">my review</a>)</li>
+<li><a href="https://vimeo.com/84676528" target="_blank" rel="noopener">Expecting professionalism</a> – 2014 – Robert C. Martin (<a href="https://herbertograca.com/2015/09/27/expecting-professionalism-by-robert-c-martin/" target="_blank" rel="noopener">my review</a>)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li style="text-align:justify;">
+<h4><strong>Agile</strong></h4>
+<ul>
+<li><a href="https://dzone.com/articles/top-10-lessons-learned-10" target="_blank" rel="noopener">Top 10 Lessons Learned From 10 Years in Agile</a>
+<ul>
+<li>Simplicity is Sophistication</li>
+<li>Define your Rhythm</li>
+<li>Agile is Fundamentally About Discipline</li>
+<li>Software is Hard to Scale, Agile is Not</li>
+<li>Think of the Big Picture</li>
+<li>Lose the Religion</li>
+<li>Continuous Focus on Business Value</li>
+<li>Agile – It’s Not Just For Software Anymore</li>
+<li>Continuous Planning</li>
+<li>Doing agile and being agile aren’t the same</li>
+</ul>
+</li>
+<li><strong>SCRUM</strong></li>
+<li><strong>KANBAN</strong></li>
+</ul>
+</li>
+<li>
+<h4><strong>Team Building</strong></h4>
+<ul>
+<li>
+<h5>Articles</h5>
+<ul>
+<li><a href="https://herbertograca.com/2015/11/01/teams-building-managing-leading-performing/" target="_blank" rel="noopener">Teams: building, managing, leading, performing</a> – 2015 – Herberto Graça</li>
+</ul>
+</li>
+<li>
+<h5>Talks</h5>
+<ul>
+<li><span class="watch-title " dir="ltr" title="The Geek's Guide to Leading Teams by Patrick Kua"><a href="https://www.youtube.com/watch?v=N9UPW-2wL5U" target="_blank" rel="noopener">The Geek’s Guide to Leading Teams</a> – 2012 – Patrick Kua</span></li>
+<li><span id="eow-title" class="watch-title " dir="ltr" title="Uncle Bob on How to Build a Great Software Development Team"><a href="https://www.youtube.com/watch?v=GIyy7x4XqEc" target="_blank" rel="noopener">How to Build a Great Software Development Team</a> – 2012 – Robert C. Martin</span></li>
+<li><span id="eow-title" class="watch-title " dir="ltr" title="Software Development in the 21st Century by Martin Fowler"><a href="https://www.youtube.com/watch?v=TgdFA72crHM&amp;t=38m25s" target="_blank" rel="noopener">Software Development in the 21st Century</a> – 2013 – Martin Fowler</span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li style="text-align:justify;">
+<h4><strong>Books to read</strong></h4>
+<ul>
+<li><a href="https://www.amazon.com/dp/0201544350" target="_blank" rel="noopener">Object-Oriented Software Engineering: A Use Case Driven Approach</a><br>
+1992 –&nbsp;Ivar Jacobson</li>
+<li><a href="https://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959" target="_blank" rel="noopener">The Mythical Man-Month: Essays on Software Engineering</a><br>
+1995 – Frederick P. Brooks Jr.</li>
+<li><a href="https://www.amazon.com/Analysis-Patterns-Reusable-Object-Models/dp/0201895420" target="_blank" rel="noopener">Analysis Patterns: Reusable Object Models</a><br>
+1996 – Martin Fowler</li>
+<li><strong><a id="itemName_I3J37QF1JWXXJM" class="a-link-normal a-declarative" title="Refactoring: Improving the Design of Existing Code" href="https://www.amazon.com/dp/0201485672/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&amp;colid=CG11VVP0H8Y8&amp;coliid=I3J37QF1JWXXJM">Refactoring: Improving the Design of Existing Code</a></strong><br>
+1999 – Martin Fowler, Kent Beck, John Brant</li>
+<li><a href="https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X" target="_blank" rel="noopener">The Pragmatic Programmer: From Journeyman to Master</a><br>
+1999 – Andrew Hunt, David Thomas</li>
+<li><strong><a id="itemName_I1QPWUPW6G7YF5" class="a-link-normal a-declarative" title="Patterns of Enterprise Application Architecture" href="https://www.amazon.com/dp/0321127420/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&amp;colid=CG11VVP0H8Y8&amp;coliid=I1QPWUPW6G7YF5">Patterns of Enterprise Application Architecture</a></strong><br>
+2002 – Martin Fowler</li>
+<li><strong><a id="itemName_I1P9T8D1QRUFMM" class="a-link-normal a-declarative" title="Agile Software Development, Principles, Patterns, and Practices" href="https://www.amazon.com/dp/0135974445/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&amp;colid=CG11VVP0H8Y8&amp;coliid=I1P9T8D1QRUFMM">Agile Software Development, Principles, Patterns, and Practices</a></strong><br>
+2002 – Robert C. Martin</li>
+<li><strong><a id="itemName_I1X0NXLUHTFGE4" class="a-link-normal a-declarative" title="Domain-Driven Design: Tackling Complexity in the Heart of Software" href="https://www.amazon.com/dp/0321125215/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&amp;colid=CG11VVP0H8Y8&amp;coliid=I1X0NXLUHTFGE4">Domain-Driven Design: Tackling Complexity in the Heart of Software</a></strong><br>
+2003 – Eric Evans</li>
+<li><a href="https://www.amazon.com/Lean-Thinking-Corporation-Revised-Updated/dp/0743249275" target="_blank" rel="noopener">Lean Thinking: Banish Waste and Create Wealth in Your Corporation, Revised and Updated</a><br>
+2003 –&nbsp; James P. Womack, Daniel T. Jones</li>
+<li><a href="https://www.amazon.co.uk/Toyota-Way-Management-Principles-Manufacturer/dp/0071392319" target="_blank" rel="noopener">The Toyota Way: 14 Management Principles from the World’s Greatest Manufacturer</a><br>
+2004 –&nbsp; Jeffrey K. Liker</li>
+<li><strong><a id="itemName_I2QU8RUBUOR563" class="a-link-normal a-declarative" title="Head First Design Patterns" href="https://www.amazon.com/dp/0596007124/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&amp;colid=CG11VVP0H8Y8&amp;coliid=I2QU8RUBUOR563">Head First Design Patterns</a></strong><br>
+2004 – Eric Freeman, Bert Bates, Kathy Sierra</li>
+<li><a id="itemName_I3DFYJDPEG9OVN" class="a-link-normal a-declarative" title="Working Effectively with Legacy Code" href="https://www.amazon.com/dp/0131177052/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&amp;colid=CG11VVP0H8Y8&amp;coliid=I3DFYJDPEG9OVN">Working Effectively with Legacy Code</a><br>
+2004 – Michael Feathers</li>
+<li><a href="https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670" target="_blank" rel="noopener">Code Complete: A Practical Handbook of Software Construction</a><br>
+2004 – Steve McConnell</li>
+<li><strong><a id="itemName_I27VGVRS8JBY2W" class="a-link-normal a-declarative" title="Clean Code: A Handbook of Agile Software Craftsmanship" href="https://www.amazon.com/dp/0132350882/ref=wl_it_dp_o_pd_nS_ttl?_encoding=UTF8&amp;colid=CG11VVP0H8Y8&amp;coliid=I27VGVRS8JBY2W">Clean Code: A Handbook of Agile Software Craftsmanship</a></strong><br>
+2008 – Robert C. Martin</li>
+<li><a id="itemName_IC26RYW6I4A92" class="a-link-normal a-declarative" title="Growing Object-Oriented Software, Guided by Tests" href="https://www.amazon.com/dp/0321503627/ref=wl_it_dp_o_pC_S_ttl?_encoding=UTF8&amp;colid=CG11VVP0H8Y8&amp;coliid=IC26RYW6I4A92">Growing Object-Oriented Software, Guided by Tests</a><br>
+2009 – Steve Freeman, Nat Pryce</li>
+<li><strong><a id="itemName_I1EVUPMM64I7PQ" class="a-link-normal a-declarative" title="Lean Architecture: for Agile Software Development" href="https://www.amazon.com/dp/0470684208/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&amp;colid=CG11VVP0H8Y8&amp;coliid=I1EVUPMM64I7PQ">Lean Architecture: for Agile Software Development</a></strong><br>
+2010 – James O. Coplien, Gertrud Bjørnvig</li>
+<li><a href="https://www.amazon.com/Business-Model-Generation-Visionaries-Challengers/dp/0470876417" target="_blank" rel="noopener">Business Model Generation</a><br>
+2010 – Alexander Osterwalder, Yves Pigneur</li>
+<li><a href="https://www.amazon.com/Seven-Languages-Weeks-Programming-Programmers/dp/193435659X" target="_blank" rel="noopener">Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages</a><br>
+2010 – Bruce Tate</li>
+<li><a id="itemName_I33VWUSYMP38OV" class="a-link-normal a-declarative" title="The Clean Coder: A Code of Conduct for Professional Programmers (Robert C. Martin Series)" href="https://www.amazon.com/dp/0137081073/ref=wl_it_dp_o_pd_nS_ttl?_encoding=UTF8&amp;colid=CG11VVP0H8Y8&amp;coliid=I33VWUSYMP38OV">The Clean Coder: A Code of Conduct for Professional Programmers</a><strong><br>
+</strong>2011 – Robert C. Martin</li>
+<li><a href="https://www.amazon.com/The-Lean-Startup-Entrepreneurs-Continuous/dp/0307887898" target="_blank" rel="noopener">The Lean Startup: How Today’s Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses</a><br>
+2011 – Eric Ries</li>
+<li><a href="https://www.amazon.com/Peopleware-Productive-Projects-Teams-3rd/dp/0321934113" target="_blank" rel="noopener">Peopleware: Productive Projects and Teams</a><br>
+2013 – Tom DeMarco, Tim Lister</li>
+<li>
+<div class="a-fixed-left-grid-col g-item-sortable-draggable-area a-col-left"><a id="itemName_I1O3N1H2UNRG31" class="a-link-normal a-declarative" title="Implementing Domain-Driven Design" href="https://www.amazon.com/dp/0321834577/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&amp;colid=CG11VVP0H8Y8&amp;coliid=I1O3N1H2UNRG31">Implementing Domain-Driven Design</a><br>
+2013 – Vaughn Vernon</div>
+</li>
+<li><a href="https://www.amazon.com/Soft-Skills-software-developers-manual/dp/1617292397" target="_blank" rel="noopener">Soft Skills: The software developer’s life manual</a><br>
+2014 – John Somnez</li>
+<li><strong><a href="https://www.amazon.co.uk/Lean-Enterprise-Performance-Organizations-Innovate/dp/1449368425" target="_blank" rel="noopener">Lean Enterprise: How High Performance Organizations Innovate at Scale</a></strong><br>
+2015 –&nbsp; Jez Humble, Joanne Molesky, Barry O’Reilly</li>
+<li><strong><a id="itemName_I1YLMVYHBJ9ZEK" class="a-link-normal a-declarative" title="Patterns, Principles, and Practices of Domain-Driven Design" href="https://www.amazon.com/dp/1118714709/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&amp;colid=CG11VVP0H8Y8&amp;coliid=I1YLMVYHBJ9ZEK"> Patterns, Principles, and Practices of Domain-Driven Design</a></strong><br>
+2015 – Scott Millett, Nick Tune</li>
+<li><a id="itemName_I178T2KAKQB8GA" class="a-link-normal a-declarative" title="Building Microservices" href="https://www.amazon.com/dp/1491950358/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&amp;colid=CG11VVP0H8Y8&amp;coliid=I178T2KAKQB8GA"> Building Microservices</a><br>
+2015 – Sam Newman</li>
+</ul>
+</li>
+<li>
+<h4><strong>Other</strong></h4>
+<ul>
+<li><a href="https://gist.github.com/jeroenvdgulik/4075122c783b090597a34aa6fa0f642c" target="_blank" rel="noopener">My mostly incomplete list of memorable talks that should probably be required material</a> – Jeroen V. D. Gulik</li>
+<li><a href="https://github.com/mr-mig/every-programmer-should-know/blob/master/README.md" target="_blank" rel="noopener">Every Programmer Should Know</a> –&nbsp;Hesky Ji</li>
+<li><a href="https://github.com/hellerve/programming-talks" target="_blank" rel="noopener">Awesome &amp; Interesting Talks concerning Programming</a> –&nbsp;Veit Heller</li>
+</ul>
+</li>
+</ul>
+  </article>
