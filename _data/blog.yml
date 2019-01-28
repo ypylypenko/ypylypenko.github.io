@@ -2,6 +2,20 @@
   slug: digest
   items:
     - title: "Go дайджест #0: Go 1.10 Beta 2, Testing patterns, Concurrency patterns"
-      url: 
-    - title:
-      url:
+      url: /digest/go/2018-01-13-go-digest-0
+      icon:
+    - title: "Go дайджест #1: Go 1.10rc2, dep dependency management, SOLID в Go"
+      url: /digest/go/2018-01-13-go-digest-1
+      icon:
+    - title: "Go дайджест #2: Go 1.10.1 and 1.9.5, Blockchain Mining алгоритм, разработка Slack-ботов"
+      url: /digest/go/2018-01-13-go-digest-2
+      icon:
+    - title: "Go дайджест #3: Go 1.10.2 and 1.9.6, новый брендинг для Go, NGINX Unit 1.0 сервер приложений с поддержкой Go"
+      url: /digest/go/2018-01-13-go-digest-3
+      icon:
+    - title: "Go дайджест #4: Go 1.11 Beta 1, WebAssembly and Go, GraphQL, Apple Metal API and Go"
+      url: /digest/go/2018-01-13-go-digest-4
+      icon:
+    - title: "Go дайджест #5: Go 1.11 c поддержкой модулей и WebAssembly, отказоустойчивость в микросервисной архитектуре"
+      url: /digest/go/2018-01-13-go-digest-5
+      icon:
